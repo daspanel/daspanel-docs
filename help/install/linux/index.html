@@ -265,62 +265,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-a-docker-volume-to-store-permanent-data" title="Create a Docker volume to store permanent data" class="md-nav__link">
-    Create a Docker volume to store permanent data
+  <a href="#create-directory-project" title="Create directory project" class="md-nav__link">
+    Create directory project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-container" title="Start container:" class="md-nav__link">
-    Start container:
+  <a href="#download-config-files" title="Download config files" class="md-nav__link">
+    Download config files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#stop-container" title="Stop container:" class="md-nav__link">
-    Stop container:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-stoped-containers" title="Remove stoped containers:" class="md-nav__link">
-    Remove stoped containers:
+  <a href="#configure-email-service" title="Configure email service" class="md-nav__link">
+    Configure email service
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#another-usages" title="Another usages" class="md-nav__link">
-    Another usages
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#shell-access-to-the-container" title="Shell access to the container" class="md-nav__link">
-    Shell access to the container
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customization" title="Customization" class="md-nav__link">
-    Customization
-  </a>
   
 </li>
       
@@ -492,62 +458,28 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#create-a-docker-volume-to-store-permanent-data" title="Create a Docker volume to store permanent data" class="md-nav__link">
-    Create a Docker volume to store permanent data
+  <a href="#create-directory-project" title="Create directory project" class="md-nav__link">
+    Create directory project
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#start-container" title="Start container:" class="md-nav__link">
-    Start container:
+  <a href="#download-config-files" title="Download config files" class="md-nav__link">
+    Download config files
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#stop-container" title="Stop container:" class="md-nav__link">
-    Stop container:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#remove-stoped-containers" title="Remove stoped containers:" class="md-nav__link">
-    Remove stoped containers:
+  <a href="#configure-email-service" title="Configure email service" class="md-nav__link">
+    Configure email service
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#another-usages" title="Another usages" class="md-nav__link">
-    Another usages
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#shell-access-to-the-container" title="Shell access to the container" class="md-nav__link">
-    Shell access to the container
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#customization" title="Customization" class="md-nav__link">
-    Customization
-  </a>
   
 </li>
       
@@ -566,65 +498,81 @@
                
               
                 
-                <h1 id="using-docker-compose">Using docker-compose<a class="headerlink" href="#using-docker-compose" title="Permanent link">&para;</a></h1>
+                <h1 id="linux-install">Linux Install<a class="headerlink" href="#linux-install" title="Permanent link">&para;</a></h1>
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h2>
-<p>You can use the <code>docker-compose.yml</code> associated with this image to have more 
-advanced control on his usage. See the contents of the docker-compose.yml file 
-to familiarize yourself with its features.</p>
-<p><em>The <code>docker-compose</code> command is an powerfull member of the Docker system and 
-is highly recommended that you know his documentation: 
-<a href="https://docs.docker.com/compose/">https://docs.docker.com/compose/</a></em></p>
+<p>You can use <code>Daspanel</code> with any modern Linux distribution. The only 
+requirements are that you have installed <code>docker</code> and <code>docker-compose</code> on it. 
+More information on how to install them can be found on these pages: 
+<a href="https://docs.docker.com/engine/installation/linux/">docker</a> and 
+<a href="https://docs.docker.com/compose/">docker-compose</a></p>
 <h2 id="quick-start">Quick Start<a class="headerlink" href="#quick-start" title="Permanent link">&para;</a></h2>
-<h3 id="create-a-docker-volume-to-store-permanent-data">Create a Docker volume to store permanent data<a class="headerlink" href="#create-a-docker-volume-to-store-permanent-data" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>docker volume create --name<span class="o">=</span>daspanel-data
+<h3 id="create-directory-project">Create directory project<a class="headerlink" href="#create-directory-project" title="Permanent link">&para;</a></h3>
+<p>A Daspanel project can contain multiple sites that usually belong to a 
+particular customer or that are related to each other. Let's assume that we are 
+going to work with <strong>customer1</strong> sites:</p>
+<div class="codehilite"><pre><span></span>mkdir customer1
+mkdir customer1/data
+<span class="nb">cd</span> customer1
 </pre></div>
 
 
-<h3 id="start-container">Start container:<a class="headerlink" href="#start-container" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>docker-compose up
+<p><em>The <code>customer1/data</code> directory will be used to store all the data and files 
+of the sites managed by this project.</em></p>
+<h3 id="download-config-files">Download config files<a class="headerlink" href="#download-config-files" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>wget https://raw.githubusercontent.com/daspanel/daspanel/master/docker-compose.yml
+wget https://raw.githubusercontent.com/daspanel/daspanel/master/daspanel.env
+wget https://raw.githubusercontent.com/daspanel/daspanel/master/smtp.env
 </pre></div>
 
 
-<p>This will start an new docker container using 
-<code>daspanel/mariadb</code> as base image. 
-<a href="https://docs.docker.com/compose/reference/up/">?</a></p>
-<h3 id="stop-container">Stop container:<a class="headerlink" href="#stop-container" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>docker-compose stop
-</pre></div>
-
-
-<p>Stop the running conatiner create before with the <code>docker-compose up</code> command. 
-<a href="https://docs.docker.com/compose/reference/stop/">?</a></p>
-<h3 id="remove-stoped-containers">Remove stoped containers:<a class="headerlink" href="#remove-stoped-containers" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span>docker-compose rm
-</pre></div>
-
-
-<p>Use this command to remove stopped containers create before with the 
-<code>docker-compose up</code> command. 
-<a href="https://docs.docker.com/compose/reference/rm/">?</a>  </p>
-<h2 id="another-usages">Another usages<a class="headerlink" href="#another-usages" title="Permanent link">&para;</a></h2>
-<h3 id="shell-access-to-the-container">Shell access to the container<a class="headerlink" href="#shell-access-to-the-container" title="Permanent link">&para;</a></h3>
-<p>In order to run the container and get access to a shell on it you can do:</p>
-<div class="codehilite"><pre><span></span>docker-compose run daspanel-mariadb /bin/sh
-</pre></div>
-
-
-<p>where <code>daspanel-mariadb</code> must be one of the 
-definied services in your <code>docker-compose.yml</code>. See below relevant content of 
-the compose file:
-<div class="codehilite"><pre><span></span><span class="l l-Scalar l-Scalar-Plain">version</span><span class="p p-Indicator">:</span> <span class="s">&#39;2&#39;</span>
-<span class="l l-Scalar l-Scalar-Plain">services</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">daspanel-mariadb</span><span class="p p-Indicator">:</span>
-        <span class="l l-Scalar l-Scalar-Plain">build</span><span class="p p-Indicator">:</span>
-            <span class="l l-Scalar l-Scalar-Plain">context</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">.</span>
-            <span class="l l-Scalar l-Scalar-Plain">dockerfile</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Dockerfile</span>
-        <span class="l l-Scalar l-Scalar-Plain">...</span>
-</pre></div>
-</p>
-<h2 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h2>
-<p>The sample <code>docker-compose.yml</code> file in this project it's only an start point for 
-your convenience. Fell free to change it for your specific needs.</p>
+<p><em>Of course, you can use your browser to download the above files into the 
+<code>customer1</code> directory</em></p>
+<h3 id="configure-email-service">Configure email service<a class="headerlink" href="#configure-email-service" title="Permanent link">&para;</a></h3>
+<p>Probably the sites you host will need to send emails using the PHP command 
+<code>mail()</code>. In addition, Daspanel will need to send you occasional notifications. 
+To avoid SPAM issues Daspanel itself or sites hosted on it can't send emails 
+directly. You need to set up an external mail sending service.</p>
+<p>To do this, edit the <code>customer1/smtp.env</code> file and change the following settings:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Setting</th>
+<th align="center">Required</th>
+<th align="left">Example</th>
+<th align="left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>DASPANEL_MAIL_SERVER</strong></td>
+<td align="center">yes</td>
+<td align="left">smtp.gmail.com:587</td>
+<td align="left">SMTP server address in the format <code>host:port</code></td>
+</tr>
+<tr>
+<td align="left"><strong>DASPANEL_MAIL_USER</strong></td>
+<td align="center">yes</td>
+<td align="left"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></td>
+<td align="left">Your login account in the SMTP server</td>
+</tr>
+<tr>
+<td align="left"><strong>DASPANEL_MAIL_PWD</strong></td>
+<td align="center">yes</td>
+<td align="left">verygoodpassword</td>
+<td align="left">Password of your SMTP account</td>
+</tr>
+<tr>
+<td align="left"><strong>DASPANEL_MAIL_HUB</strong></td>
+<td align="center">yes</td>
+<td align="left">gmail</td>
+<td align="left"><strong>Do not change for now</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The smtp.env file you downloaded is an example of how to set up sending emails using a Gmail account. Adapt it to your preferred email provider.</p>
+</div>
               
               
             </article>

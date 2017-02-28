@@ -42,17 +42,17 @@
         }, 
         {
             "location": "/help/install/linux/", 
-            "text": "Using docker-compose\n\n\nOverview\n\n\nYou can use the \ndocker-compose.yml\n associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.\n\n\nThe \ndocker-compose\n command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation: \n\nhttps://docs.docker.com/compose/\n\n\nQuick Start\n\n\nCreate a Docker volume to store permanent data\n\n\ndocker volume create --name\n=\ndaspanel-data\n\n\n\n\n\nStart container:\n\n\ndocker-compose up\n\n\n\n\n\nThis will start an new docker container using \n\ndaspanel/mariadb\n as base image. \n\n?\n\n\nStop container:\n\n\ndocker-compose stop\n\n\n\n\n\nStop the running conatiner create before with the \ndocker-compose up\n command. \n\n?\n\n\nRemove stoped containers:\n\n\ndocker-compose rm\n\n\n\n\n\nUse this command to remove stopped containers create before with the \n\ndocker-compose up\n command. \n\n?\n  \n\n\nAnother usages\n\n\nShell access to the container\n\n\nIn order to run the container and get access to a shell on it you can do:\n\n\ndocker-compose run daspanel-mariadb /bin/sh\n\n\n\n\n\nwhere \ndaspanel-mariadb\n must be one of the \ndefinied services in your \ndocker-compose.yml\n. See below relevant content of \nthe compose file:\n\nversion\n:\n \n2\n\n\nservices\n:\n\n    \ndaspanel-mariadb\n:\n\n        \nbuild\n:\n\n            \ncontext\n:\n \n.\n\n            \ndockerfile\n:\n \nDockerfile\n\n        \n...\n\n\n\n\n\n\nCustomization\n\n\nThe sample \ndocker-compose.yml\n file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
+            "text": "Linux Install\n\n\nOverview\n\n\nYou can use \nDaspanel\n with any modern Linux distribution. The only \nrequirements are that you have installed \ndocker\n and \ndocker-compose\n on it. \nMore information on how to install them can be found on these pages: \n\ndocker\n and \n\ndocker-compose\n\n\nQuick Start\n\n\nCreate directory project\n\n\nA Daspanel project can contain multiple sites that usually belong to a \nparticular customer or that are related to each other. Let's assume that we are \ngoing to work with \ncustomer1\n sites:\n\n\nmkdir customer1\nmkdir customer1/data\n\ncd\n customer1\n\n\n\n\n\nThe \ncustomer1/data\n directory will be used to store all the data and files \nof the sites managed by this project.\n\n\nDownload config files\n\n\nwget https://raw.githubusercontent.com/daspanel/daspanel/master/docker-compose.yml\nwget https://raw.githubusercontent.com/daspanel/daspanel/master/daspanel.env\nwget https://raw.githubusercontent.com/daspanel/daspanel/master/smtp.env\n\n\n\n\n\nOf course, you can use your browser to download the above files into the \n\ncustomer1\n directory\n\n\nConfigure email service\n\n\nProbably the sites you host will need to send emails using the PHP command \n\nmail()\n. In addition, Daspanel will need to send you occasional notifications. \nTo avoid SPAM issues Daspanel itself or sites hosted on it can't send emails \ndirectly. You need to set up an external mail sending service.\n\n\nTo do this, edit the \ncustomer1/smtp.env\n file and change the following settings:\n\n\n\n\n\n\n\n\nSetting\n\n\nRequired\n\n\nExample\n\n\n\n\n\n\n\n\n\n\n\n\nDASPANEL_MAIL_SERVER\n\n\nyes\n\n\nsmtp.gmail.com:587\n\n\nSMTP server address in the format \nhost:port\n\n\n\n\n\n\nDASPANEL_MAIL_USER\n\n\nyes\n\n\n\n\nYour login account in the SMTP server\n\n\n\n\n\n\nDASPANEL_MAIL_PWD\n\n\nyes\n\n\nverygoodpassword\n\n\nPassword of your SMTP account\n\n\n\n\n\n\nDASPANEL_MAIL_HUB\n\n\nyes\n\n\ngmail\n\n\nDo not change for now\n\n\n\n\n\n\n\n\n\n\nNote\n\n\nThe smtp.env file you downloaded is an example of how to set up sending emails using a Gmail account. Adapt it to your preferred email provider.", 
             "title": "Linux"
         }, 
         {
-            "location": "/help/install/linux/#using-docker-compose", 
+            "location": "/help/install/linux/#linux-install", 
             "text": "", 
-            "title": "Using docker-compose"
+            "title": "Linux Install"
         }, 
         {
             "location": "/help/install/linux/#overview", 
-            "text": "You can use the  docker-compose.yml  associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.  The  docker-compose  command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation:  https://docs.docker.com/compose/", 
+            "text": "You can use  Daspanel  with any modern Linux distribution. The only \nrequirements are that you have installed  docker  and  docker-compose  on it. \nMore information on how to install them can be found on these pages:  docker  and  docker-compose", 
             "title": "Overview"
         }, 
         {
@@ -61,39 +61,19 @@
             "title": "Quick Start"
         }, 
         {
-            "location": "/help/install/linux/#create-a-docker-volume-to-store-permanent-data", 
-            "text": "docker volume create --name = daspanel-data", 
-            "title": "Create a Docker volume to store permanent data"
+            "location": "/help/install/linux/#create-directory-project", 
+            "text": "A Daspanel project can contain multiple sites that usually belong to a \nparticular customer or that are related to each other. Let's assume that we are \ngoing to work with  customer1  sites:  mkdir customer1\nmkdir customer1/data cd  customer1  The  customer1/data  directory will be used to store all the data and files \nof the sites managed by this project.", 
+            "title": "Create directory project"
         }, 
         {
-            "location": "/help/install/linux/#start-container", 
-            "text": "docker-compose up  This will start an new docker container using  daspanel/mariadb  as base image.  ?", 
-            "title": "Start container:"
+            "location": "/help/install/linux/#download-config-files", 
+            "text": "wget https://raw.githubusercontent.com/daspanel/daspanel/master/docker-compose.yml\nwget https://raw.githubusercontent.com/daspanel/daspanel/master/daspanel.env\nwget https://raw.githubusercontent.com/daspanel/daspanel/master/smtp.env  Of course, you can use your browser to download the above files into the  customer1  directory", 
+            "title": "Download config files"
         }, 
         {
-            "location": "/help/install/linux/#stop-container", 
-            "text": "docker-compose stop  Stop the running conatiner create before with the  docker-compose up  command.  ?", 
-            "title": "Stop container:"
-        }, 
-        {
-            "location": "/help/install/linux/#remove-stoped-containers", 
-            "text": "docker-compose rm  Use this command to remove stopped containers create before with the  docker-compose up  command.  ?", 
-            "title": "Remove stoped containers:"
-        }, 
-        {
-            "location": "/help/install/linux/#another-usages", 
-            "text": "", 
-            "title": "Another usages"
-        }, 
-        {
-            "location": "/help/install/linux/#shell-access-to-the-container", 
-            "text": "In order to run the container and get access to a shell on it you can do:  docker-compose run daspanel-mariadb /bin/sh  where  daspanel-mariadb  must be one of the \ndefinied services in your  docker-compose.yml . See below relevant content of \nthe compose file: version :   2  services : \n     daspanel-mariadb : \n         build : \n             context :   . \n             dockerfile :   Dockerfile \n         ...", 
-            "title": "Shell access to the container"
-        }, 
-        {
-            "location": "/help/install/linux/#customization", 
-            "text": "The sample  docker-compose.yml  file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
-            "title": "Customization"
+            "location": "/help/install/linux/#configure-email-service", 
+            "text": "Probably the sites you host will need to send emails using the PHP command  mail() . In addition, Daspanel will need to send you occasional notifications. \nTo avoid SPAM issues Daspanel itself or sites hosted on it can't send emails \ndirectly. You need to set up an external mail sending service.  To do this, edit the  customer1/smtp.env  file and change the following settings:     Setting  Required  Example       DASPANEL_MAIL_SERVER  yes  smtp.gmail.com:587  SMTP server address in the format  host:port    DASPANEL_MAIL_USER  yes   Your login account in the SMTP server    DASPANEL_MAIL_PWD  yes  verygoodpassword  Password of your SMTP account    DASPANEL_MAIL_HUB  yes  gmail  Do not change for now      Note  The smtp.env file you downloaded is an example of how to set up sending emails using a Gmail account. Adapt it to your preferred email provider.", 
+            "title": "Configure email service"
         }, 
         {
             "location": "/help/compose/", 
