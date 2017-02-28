@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    
+    <url>
+     <loc>https://daspanel.github.io/daspanel/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/help/install/linux/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/help/compose/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/help/advanced/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/help/development/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/howto/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>https://daspanel.github.io/daspanel/issues/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>https://daspanel.github.io/daspanel/contributing/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/authors/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>https://daspanel.github.io/daspanel/changelog/</loc>
+     <lastmod>2017-02-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+</urlset>

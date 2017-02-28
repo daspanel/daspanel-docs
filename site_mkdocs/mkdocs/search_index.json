@@ -1,0 +1,314 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Daspanel\n\n\nFree, open-source, server agnostic, self-hosted web hosting control panel using Docker\n\n\n\n\nFree software: MIT license\n\n\nProject: \nhttps://github.com/daspanel/daspanel\n\n\n\n\n\n\nFeatures\n\n\n\n\nUse in your local computer or in any public server with same results.\n\n\nAll services run using Docker containers on Linux, Windows or Mac hosts.\n\n\nAPI First\n\n\nWeb interface that works on desktop browsers, smartphones and tablets.\n\n\n\n\nFor detailed list see the \nfeatures page\n.\n\n\nQuick Start\n\n\nRequirements\n\n\nMake sure you have installed the following software in your computer:\n\n\n\n\ndocker\n\n\ndocker-compose\n\n\n\n\nInstall\n\n\nFollow the appropriate instructions for your computer in one of the links below:\n\n\n\n\nLinux\n\n\n\n\nWhy Daspanel ?\n\n\nIn a world dominated by cloud computing and the use of Docker containers, \nsite hosting continues to be done mostly using tools like Cpanel or Plesk. \nSome of these tools were created in the 1990s (The Cpanel was created in 1996), \nand perhaps the time has come when they are no longer so relevant to the \nhosting business.\n\n\nWebsite designers and hosting companies need tools more appropriate to the \ntechnology we have available today.\n\n\nDASPANEL is a proposal for a new model of development and hosting of websites.\nThis is the first version of Daspanel. It is an exciting step forward towards \nmaking an hosting control panel using Docker. We created it so that you can \ncreate any site, plain or using PHP, in your local machine and when ready easy \ndeploy it on an public server exactly as you see it in the development machine.\n\n\nThis software is still in a pre alpha stage but, stay tuned for interesting \nnews soon.\n\n\nBuild something great!\n\n\nOpen Source Credits\n\n\nWe use alot of open source software to make Daspanel. Although the list below \nis incomplete it contains the main projects used to create Daspanel:\n\n\n\n\nDocker\n - containerization platform\n\n\nAlpine Linux\n - Linux distro used in our docker \nimages\n\n\nS6 Overlay\n - is a series of \ninit scripts and utilities to ease creating Docker images using s6 as a process \nsupervisor\n\n\nCaddy\n - Fast, cross-platform HTTP/2 web server \nwith automatic HTTPS\n\n\nConnexion\n - Swagger API framework for \nPython on top of Flask\n\n\nMinio\n - Open source object storage server compatible \nwith Amazon S3 APIs\n\n\nAnd a lot more: \nFlask\n, \n\nMariaDB\n, \nPHP 5/7\n, \n\nTinyDB\n, \n\nMuicss", 
+            "title": "About"
+        }, 
+        {
+            "location": "/#daspanel", 
+            "text": "Free, open-source, server agnostic, self-hosted web hosting control panel using Docker   Free software: MIT license  Project:  https://github.com/daspanel/daspanel", 
+            "title": "Daspanel"
+        }, 
+        {
+            "location": "/#features", 
+            "text": "Use in your local computer or in any public server with same results.  All services run using Docker containers on Linux, Windows or Mac hosts.  API First  Web interface that works on desktop browsers, smartphones and tablets.   For detailed list see the  features page .", 
+            "title": "Features"
+        }, 
+        {
+            "location": "/#quick-start", 
+            "text": "", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/#requirements", 
+            "text": "Make sure you have installed the following software in your computer:   docker  docker-compose", 
+            "title": "Requirements"
+        }, 
+        {
+            "location": "/#install", 
+            "text": "Follow the appropriate instructions for your computer in one of the links below:   Linux", 
+            "title": "Install"
+        }, 
+        {
+            "location": "/#why-daspanel", 
+            "text": "In a world dominated by cloud computing and the use of Docker containers, \nsite hosting continues to be done mostly using tools like Cpanel or Plesk. \nSome of these tools were created in the 1990s (The Cpanel was created in 1996), \nand perhaps the time has come when they are no longer so relevant to the \nhosting business.  Website designers and hosting companies need tools more appropriate to the \ntechnology we have available today.  DASPANEL is a proposal for a new model of development and hosting of websites.\nThis is the first version of Daspanel. It is an exciting step forward towards \nmaking an hosting control panel using Docker. We created it so that you can \ncreate any site, plain or using PHP, in your local machine and when ready easy \ndeploy it on an public server exactly as you see it in the development machine.  This software is still in a pre alpha stage but, stay tuned for interesting \nnews soon.  Build something great!", 
+            "title": "Why Daspanel ?"
+        }, 
+        {
+            "location": "/#open-source-credits", 
+            "text": "We use alot of open source software to make Daspanel. Although the list below \nis incomplete it contains the main projects used to create Daspanel:   Docker  - containerization platform  Alpine Linux  - Linux distro used in our docker \nimages  S6 Overlay  - is a series of \ninit scripts and utilities to ease creating Docker images using s6 as a process \nsupervisor  Caddy  - Fast, cross-platform HTTP/2 web server \nwith automatic HTTPS  Connexion  - Swagger API framework for \nPython on top of Flask  Minio  - Open source object storage server compatible \nwith Amazon S3 APIs  And a lot more:  Flask ,  MariaDB ,  PHP 5/7 ,  TinyDB ,  Muicss", 
+            "title": "Open Source Credits"
+        }, 
+        {
+            "location": "/help/install/linux/", 
+            "text": "Using docker-compose\n\n\nOverview\n\n\nYou can use the \ndocker-compose.yml\n associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.\n\n\nThe \ndocker-compose\n command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation: \n\nhttps://docs.docker.com/compose/\n\n\nQuick Start\n\n\nCreate a Docker volume to store permanent data\n\n\ndocker volume create --name\n=\ndaspanel-data\n\n\n\n\n\nStart container:\n\n\ndocker-compose up\n\n\n\n\n\nThis will start an new docker container using \n\ndaspanel/mariadb\n as base image. \n\n?\n\n\nStop container:\n\n\ndocker-compose stop\n\n\n\n\n\nStop the running conatiner create before with the \ndocker-compose up\n command. \n\n?\n\n\nRemove stoped containers:\n\n\ndocker-compose rm\n\n\n\n\n\nUse this command to remove stopped containers create before with the \n\ndocker-compose up\n command. \n\n?\n  \n\n\nAnother usages\n\n\nShell access to the container\n\n\nIn order to run the container and get access to a shell on it you can do:\n\n\ndocker-compose run daspanel-mariadb /bin/sh\n\n\n\n\n\nwhere \ndaspanel-mariadb\n must be one of the \ndefinied services in your \ndocker-compose.yml\n. See below relevant content of \nthe compose file:\n\nversion\n:\n \n2\n\n\nservices\n:\n\n    \ndaspanel-mariadb\n:\n\n        \nbuild\n:\n\n            \ncontext\n:\n \n.\n\n            \ndockerfile\n:\n \nDockerfile\n\n        \n...\n\n\n\n\n\n\nCustomization\n\n\nThe sample \ndocker-compose.yml\n file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
+            "title": "Linux"
+        }, 
+        {
+            "location": "/help/install/linux/#using-docker-compose", 
+            "text": "", 
+            "title": "Using docker-compose"
+        }, 
+        {
+            "location": "/help/install/linux/#overview", 
+            "text": "You can use the  docker-compose.yml  associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.  The  docker-compose  command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation:  https://docs.docker.com/compose/", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/help/install/linux/#quick-start", 
+            "text": "", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/help/install/linux/#create-a-docker-volume-to-store-permanent-data", 
+            "text": "docker volume create --name = daspanel-data", 
+            "title": "Create a Docker volume to store permanent data"
+        }, 
+        {
+            "location": "/help/install/linux/#start-container", 
+            "text": "docker-compose up  This will start an new docker container using  daspanel/mariadb  as base image.  ?", 
+            "title": "Start container:"
+        }, 
+        {
+            "location": "/help/install/linux/#stop-container", 
+            "text": "docker-compose stop  Stop the running conatiner create before with the  docker-compose up  command.  ?", 
+            "title": "Stop container:"
+        }, 
+        {
+            "location": "/help/install/linux/#remove-stoped-containers", 
+            "text": "docker-compose rm  Use this command to remove stopped containers create before with the  docker-compose up  command.  ?", 
+            "title": "Remove stoped containers:"
+        }, 
+        {
+            "location": "/help/install/linux/#another-usages", 
+            "text": "", 
+            "title": "Another usages"
+        }, 
+        {
+            "location": "/help/install/linux/#shell-access-to-the-container", 
+            "text": "In order to run the container and get access to a shell on it you can do:  docker-compose run daspanel-mariadb /bin/sh  where  daspanel-mariadb  must be one of the \ndefinied services in your  docker-compose.yml . See below relevant content of \nthe compose file: version :   2  services : \n     daspanel-mariadb : \n         build : \n             context :   . \n             dockerfile :   Dockerfile \n         ...", 
+            "title": "Shell access to the container"
+        }, 
+        {
+            "location": "/help/install/linux/#customization", 
+            "text": "The sample  docker-compose.yml  file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
+            "title": "Customization"
+        }, 
+        {
+            "location": "/help/compose/", 
+            "text": "Using docker-compose\n\n\nOverview\n\n\nYou can use the \ndocker-compose.yml\n associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.\n\n\nThe \ndocker-compose\n command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation: \n\nhttps://docs.docker.com/compose/\n\n\nQuick Start\n\n\nCreate a Docker volume to store permanent data\n\n\ndocker volume create --name\n=\ndaspanel-data\n\n\n\n\n\nStart container:\n\n\ndocker-compose up\n\n\n\n\n\nThis will start an new docker container using \n\ndaspanel/mariadb\n as base image. \n\n?\n\n\nStop container:\n\n\ndocker-compose stop\n\n\n\n\n\nStop the running conatiner create before with the \ndocker-compose up\n command. \n\n?\n\n\nRemove stoped containers:\n\n\ndocker-compose rm\n\n\n\n\n\nUse this command to remove stopped containers create before with the \n\ndocker-compose up\n command. \n\n?\n  \n\n\nAnother usages\n\n\nShell access to the container\n\n\nIn order to run the container and get access to a shell on it you can do:\n\n\ndocker-compose run daspanel-mariadb /bin/sh\n\n\n\n\n\nwhere \ndaspanel-mariadb\n must be one of the \ndefinied services in your \ndocker-compose.yml\n. See below relevant content of \nthe compose file:\n\nversion\n:\n \n2\n\n\nservices\n:\n\n    \ndaspanel-mariadb\n:\n\n        \nbuild\n:\n\n            \ncontext\n:\n \n.\n\n            \ndockerfile\n:\n \nDockerfile\n\n        \n...\n\n\n\n\n\n\nCustomization\n\n\nThe sample \ndocker-compose.yml\n file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
+            "title": "Usingh docker-compose"
+        }, 
+        {
+            "location": "/help/compose/#using-docker-compose", 
+            "text": "", 
+            "title": "Using docker-compose"
+        }, 
+        {
+            "location": "/help/compose/#overview", 
+            "text": "You can use the  docker-compose.yml  associated with this image to have more \nadvanced control on his usage. See the contents of the docker-compose.yml file \nto familiarize yourself with its features.  The  docker-compose  command is an powerfull member of the Docker system and \nis highly recommended that you know his documentation:  https://docs.docker.com/compose/", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/help/compose/#quick-start", 
+            "text": "", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/help/compose/#create-a-docker-volume-to-store-permanent-data", 
+            "text": "docker volume create --name = daspanel-data", 
+            "title": "Create a Docker volume to store permanent data"
+        }, 
+        {
+            "location": "/help/compose/#start-container", 
+            "text": "docker-compose up  This will start an new docker container using  daspanel/mariadb  as base image.  ?", 
+            "title": "Start container:"
+        }, 
+        {
+            "location": "/help/compose/#stop-container", 
+            "text": "docker-compose stop  Stop the running conatiner create before with the  docker-compose up  command.  ?", 
+            "title": "Stop container:"
+        }, 
+        {
+            "location": "/help/compose/#remove-stoped-containers", 
+            "text": "docker-compose rm  Use this command to remove stopped containers create before with the  docker-compose up  command.  ?", 
+            "title": "Remove stoped containers:"
+        }, 
+        {
+            "location": "/help/compose/#another-usages", 
+            "text": "", 
+            "title": "Another usages"
+        }, 
+        {
+            "location": "/help/compose/#shell-access-to-the-container", 
+            "text": "In order to run the container and get access to a shell on it you can do:  docker-compose run daspanel-mariadb /bin/sh  where  daspanel-mariadb  must be one of the \ndefinied services in your  docker-compose.yml . See below relevant content of \nthe compose file: version :   2  services : \n     daspanel-mariadb : \n         build : \n             context :   . \n             dockerfile :   Dockerfile \n         ...", 
+            "title": "Shell access to the container"
+        }, 
+        {
+            "location": "/help/compose/#customization", 
+            "text": "The sample  docker-compose.yml  file in this project it's only an start point for \nyour convenience. Fell free to change it for your specific needs.", 
+            "title": "Customization"
+        }, 
+        {
+            "location": "/help/advanced/", 
+            "text": "Advanced\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Advanced"
+        }, 
+        {
+            "location": "/help/advanced/#advanced", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Advanced"
+        }, 
+        {
+            "location": "/help/development/", 
+            "text": "Development\n\n\nHow to use this repositorie for local development.\n\n\nQuick Start\n\n\n    git clone https://github.com/daspanel/mariadb\n    git remote rm origin\n    \n# hack on source/Dockerfile\n\n    make clean clean-image clean-image-dangling build\n\n\n\n\n\nOverview\n\n\nIf you want to use some app with this docker project, starting putting the interesting\ncode under \nsrc/\n dir.  The project and corresponding build pipeline\nwill \"just work\".\n\n\nBuilding pipeline\n\n\nYou can create a 'docker-compose.override.template' that adapts it\nproperly to your development environment.  The Makefile when then\ngenerate a 'docker-compose.override.yml' file from the template.\n\n\nIf you want to adapt it to your demo and/or production environemnts,\ncreate a file something like docker-compose.\n.yml and use 'make\nbuild-\n run-\n'\n\n\nTesting\n\n\nYou can test in several ways\n\n\n\n\n\n\nRun a container using this image and getting an interactive shell:\n    \n\n\ndocker-compose run mariadb /bin/sh\n\n\n\n\n\nAll content inside the \nsrc\n dir will be avaiable on the \n/app\n dir of the \ncontainer and you can work\n\n\n\n\n\n\nExecute scripts inside a running container:\n\n\n\n\nPut some script that do tests when the container run unde \nsrc/\n\n\nExcute the script:\n    \ndocker-compose exec mariadb /app/yourscript\n\n\n\n\n\n\n\n\n\nThis only work when your docker image is not stopped, i.e., when the image \nhave a long running processes like a MySql server. See \n\ndocker-compose docs\n and the \n\nexec command\n for more info.\n\n\n\n\n\n\nCustomization\n\n\nModify 'docker-compose.yml' to launch your project correctly. \n\n\nAdd make rules, recipes and dependencies to 'recipes.mk' to add extra\nbuild steps or dependencies.  Modify Makefile as a last resort (and\nlet me know what you had to modify so I can look into supporting that\ncustomization).\n\n\nUse environment specific overrides to run in different environments.", 
+            "title": "Development"
+        }, 
+        {
+            "location": "/help/development/#development", 
+            "text": "How to use this repositorie for local development.", 
+            "title": "Development"
+        }, 
+        {
+            "location": "/help/development/#quick-start", 
+            "text": "git clone https://github.com/daspanel/mariadb\n    git remote rm origin\n     # hack on source/Dockerfile \n    make clean clean-image clean-image-dangling build", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/help/development/#overview", 
+            "text": "If you want to use some app with this docker project, starting putting the interesting\ncode under  src/  dir.  The project and corresponding build pipeline\nwill \"just work\".", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/help/development/#building-pipeline", 
+            "text": "You can create a 'docker-compose.override.template' that adapts it\nproperly to your development environment.  The Makefile when then\ngenerate a 'docker-compose.override.yml' file from the template.  If you want to adapt it to your demo and/or production environemnts,\ncreate a file something like docker-compose. .yml and use 'make\nbuild-  run- '", 
+            "title": "Building pipeline"
+        }, 
+        {
+            "location": "/help/development/#testing", 
+            "text": "You can test in several ways    Run a container using this image and getting an interactive shell:\n      docker-compose run mariadb /bin/sh  All content inside the  src  dir will be avaiable on the  /app  dir of the \ncontainer and you can work    Execute scripts inside a running container:   Put some script that do tests when the container run unde  src/  Excute the script:\n     docker-compose exec mariadb /app/yourscript    This only work when your docker image is not stopped, i.e., when the image \nhave a long running processes like a MySql server. See  docker-compose docs  and the  exec command  for more info.", 
+            "title": "Testing"
+        }, 
+        {
+            "location": "/help/development/#customization", 
+            "text": "Modify 'docker-compose.yml' to launch your project correctly.   Add make rules, recipes and dependencies to 'recipes.mk' to add extra\nbuild steps or dependencies.  Modify Makefile as a last resort (and\nlet me know what you had to modify so I can look into supporting that\ncustomization).  Use environment specific overrides to run in different environments.", 
+            "title": "Customization"
+        }, 
+        {
+            "location": "/howto/", 
+            "text": "Advanced\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "How To"
+        }, 
+        {
+            "location": "/howto/#advanced", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Advanced"
+        }, 
+        {
+            "location": "/issues/", 
+            "text": "How to report Bugs and/or issues\n\n\nIf you find a bug or another type of issue let us know about it.\n\n\nOpen a new issue at \n\nhttps://github.com/daspanel/daspanel/issues\n\n\nIf you are reporting a bug, please include:\n\n\n\n\nYour operating system name and version.\n\n\nAny details about your local setup that might be helpful in troubleshooting.\n\n\nDetailed steps to reproduce the bug.", 
+            "title": "Issues"
+        }, 
+        {
+            "location": "/issues/#how-to-report-bugs-andor-issues", 
+            "text": "If you find a bug or another type of issue let us know about it.  Open a new issue at  https://github.com/daspanel/daspanel/issues  If you are reporting a bug, please include:   Your operating system name and version.  Any details about your local setup that might be helpful in troubleshooting.  Detailed steps to reproduce the bug.", 
+            "title": "How to report Bugs and/or issues"
+        }, 
+        {
+            "location": "/contributing/", 
+            "text": "Contributions are welcome\n\n\nAnd they are greatly appreciated! Every\nlittle bit helps, and credit will always be given.\n\n\nTypes of Contributions\n\n\nReport Bugs\n\n\nReport bugs at \n\nhttps://github.com/daspanel/daspanel/issues\n\n\nIf you are reporting a bug, please include:\n\n\n\n\nYour operating system name and version.\n\n\nAny details about your local setup that might be helpful in troubleshooting.\n\n\nDetailed steps to reproduce the bug.\n\n\n\n\nFix Bugs\n\n\nLook through the GitHub issues for bugs. Anything tagged with \"bug\"\nand \"help wanted\" is open to whoever wants to implement it.\n\n\nImplement Features\n\n\nLook through the GitHub issues for features. Anything tagged with \"enhancement\"\nand \"help wanted\" is open to whoever wants to implement it.\n\n\nWrite Documentation\n\n\nDaspanel\n could always use more documentation, whether as part of the\nofficial docs, in docstrings, or even on the web in blog posts, articles, and \nsuch.\n\n\nSubmit Feedback\n\n\nThe best way to send feedback is to file an issue at \n\nhttps://github.com/daspanel/daspanel/issues\n\n\nIf you are proposing a feature:\n\n\n\n\nExplain in detail how it would work.\n\n\nKeep the scope as narrow as possible, to make it easier to implement.\n\n\nRemember that this is a volunteer-driven project, and that contributions\n  are welcome :)\n\n\n\n\nGet Started!\n\n\nReady to contribute? Here's how to set up \nDaspanel\n for local development.\n\n\n\n\nFork the \nDaspanel\n repo on GitHub.\n\n\n\n\nClone your fork locally:\n\n\n\n\n\n    $ git clone git@github.com:your_name_here/daspanel.git\n\n\n\n\n\n\n\n\n\nCreate a branch for local development:\n\n\n\n\n\n    $ git checkout -b name-of-your-bugfix-or-feature\n\n\n\n\n\nNow you can make your changes locally.\n\n\n\n\n\n\nCommit your changes and push your branch to GitHub:\n\n\n\n\n\n    $ git add .\n    $ git commit -m \nYour detailed description of your changes.\n\n    $ git push origin name-of-your-bugfix-or-feature\n\n\n\n\n\n\n\n\n\nSubmit a pull request through the GitHub website.\n\n\n\n\n\n\nPull Request Guidelines\n\n\nBefore you submit a pull request, check that it meets these guidelines:\n\n\n\n\nThe pull request should include tests.\n\n\nIf the pull request adds functionality, the docs should be updated. Put\n   your new functionality into a function with a docstring, and add the\n   feature to the list in README.rst.\n\n\nThe pull request should work for latest Docker Engine/Docker Compose oficial versions.\n\n\n\n\nTips", 
+            "title": "Contributing"
+        }, 
+        {
+            "location": "/contributing/#contributions-are-welcome", 
+            "text": "And they are greatly appreciated! Every\nlittle bit helps, and credit will always be given.", 
+            "title": "Contributions are welcome"
+        }, 
+        {
+            "location": "/contributing/#types-of-contributions", 
+            "text": "Report Bugs  Report bugs at  https://github.com/daspanel/daspanel/issues  If you are reporting a bug, please include:   Your operating system name and version.  Any details about your local setup that might be helpful in troubleshooting.  Detailed steps to reproduce the bug.   Fix Bugs  Look through the GitHub issues for bugs. Anything tagged with \"bug\"\nand \"help wanted\" is open to whoever wants to implement it.  Implement Features  Look through the GitHub issues for features. Anything tagged with \"enhancement\"\nand \"help wanted\" is open to whoever wants to implement it.  Write Documentation  Daspanel  could always use more documentation, whether as part of the\nofficial docs, in docstrings, or even on the web in blog posts, articles, and \nsuch.  Submit Feedback  The best way to send feedback is to file an issue at  https://github.com/daspanel/daspanel/issues  If you are proposing a feature:   Explain in detail how it would work.  Keep the scope as narrow as possible, to make it easier to implement.  Remember that this is a volunteer-driven project, and that contributions\n  are welcome :)", 
+            "title": "Types of Contributions"
+        }, 
+        {
+            "location": "/contributing/#get-started", 
+            "text": "Ready to contribute? Here's how to set up  Daspanel  for local development.   Fork the  Daspanel  repo on GitHub.   Clone your fork locally:       $ git clone git@github.com:your_name_here/daspanel.git    Create a branch for local development:       $ git checkout -b name-of-your-bugfix-or-feature  Now you can make your changes locally.    Commit your changes and push your branch to GitHub:       $ git add .\n    $ git commit -m  Your detailed description of your changes. \n    $ git push origin name-of-your-bugfix-or-feature    Submit a pull request through the GitHub website.", 
+            "title": "Get Started!"
+        }, 
+        {
+            "location": "/contributing/#pull-request-guidelines", 
+            "text": "Before you submit a pull request, check that it meets these guidelines:   The pull request should include tests.  If the pull request adds functionality, the docs should be updated. Put\n   your new functionality into a function with a docstring, and add the\n   feature to the list in README.rst.  The pull request should work for latest Docker Engine/Docker Compose oficial versions.", 
+            "title": "Pull Request Guidelines"
+        }, 
+        {
+            "location": "/contributing/#tips", 
+            "text": "", 
+            "title": "Tips"
+        }, 
+        {
+            "location": "/authors/", 
+            "text": "Credits\n\n\nThis project was created by \nAbner G Jacobsen\n.\n\n\nDevelopment Lead\n\n\n\n\nAbner G Jacobsen \n\n\n\n\nContributors\n\n\nNone yet. Why not be the first?", 
+            "title": "Authors"
+        }, 
+        {
+            "location": "/authors/#credits", 
+            "text": "This project was created by  Abner G Jacobsen .", 
+            "title": "Credits"
+        }, 
+        {
+            "location": "/authors/#development-lead", 
+            "text": "Abner G Jacobsen", 
+            "title": "Development Lead"
+        }, 
+        {
+            "location": "/authors/#contributors", 
+            "text": "None yet. Why not be the first?", 
+            "title": "Contributors"
+        }, 
+        {
+            "location": "/changelog/", 
+            "text": "Changelog - admindaspanel / mariadb\n\n\nmariadb-0.1.1\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.1\n\n\nfirst commit\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Thu 08 Sep 2016 -\n\nsee the diff\n\n\n\n\nmariadb-0.1.2\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.2\n\n\nAdded ports section to docker-compose.yml\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Thu 08 Sep 2016 -\n\nsee the diff\n\n\n\n\nmariadb-0.1.3\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.3\n\n\nChnaged where info about configuration is saved.\n\n\nChhanges needed to use alpine-base with ssmtp.\n\n\nInitializations script save infor about user and password to late use.\n\n\nChanged naming convention for /etc/cont-init.d to make sure initialization scripts are executed in correct order for all Daspanel containers ecosystem.\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Tue 29 Nov 2016 -\n\nsee the diff\n\n\n\n\nmariadb-0.1.5\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.5\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.4\n\n\nCode cleanup.\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Thu 15 Dec 2016 -\n\nsee the diff\n\n\n\n\nmariadb-0.1.6\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.6\n\n\nAdded missing file.\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Thu 15 Dec 2016 -\n\nsee the diff\n\n\n\n\nmariadb-0.1.7\n\n\nChanges\n\n\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.7\n\n\nPut MariaDB running as user/group daspanel:daspanel.\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Thu 15 Dec 2016 -\n\nsee the diff\n\n\n\n\n0.1.8\n\n\nChanges\n\n\n\n\nbumped to version 0.1.8\n\n\nCorrected bug where root access from remote host was not allowed to grant access to new user to an database.\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.7\n\n\nPut MariaDB running as user/group daspanel:daspanel.\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.6\n\n\nAdded missing file.\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.5\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.4\n\n\nCode cleanup.\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.3\n\n\nChnaged where info about configuration is saved.\n\n\nChhanges needed to use alpine-base with ssmtp.\n\n\nInitializations script save infor about user and password to late use.\n\n\nChanged naming convention for /etc/cont-init.d to make sure initialization scripts are executed in correct order for all Daspanel containers ecosystem.\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.2\n\n\nAdded ports section to docker-compose.yml\n\n\nSee changes in CHANGELOG.md\n\n\nbumped to version 0.1.1\n\n\nfirst commit\n\n\n\n\nContributors\n\n\n\n\nAbner G Jacobsen\n\n\n\n\nReleased by Abner G Jacobsen, Mon 02 Jan 2017 -\n\nsee the diff", 
+            "title": "Changelog"
+        }, 
+        {
+            "location": "/changelog/#changelog-admindaspanel-mariadb", 
+            "text": "", 
+            "title": "Changelog - admindaspanel / mariadb"
+        }, 
+        {
+            "location": "/changelog/#mariadb-011", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.1  first commit   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Thu 08 Sep 2016 - see the diff", 
+            "title": "mariadb-0.1.1"
+        }, 
+        {
+            "location": "/changelog/#mariadb-012", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.2  Added ports section to docker-compose.yml   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Thu 08 Sep 2016 - see the diff", 
+            "title": "mariadb-0.1.2"
+        }, 
+        {
+            "location": "/changelog/#mariadb-013", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.3  Chnaged where info about configuration is saved.  Chhanges needed to use alpine-base with ssmtp.  Initializations script save infor about user and password to late use.  Changed naming convention for /etc/cont-init.d to make sure initialization scripts are executed in correct order for all Daspanel containers ecosystem.   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Tue 29 Nov 2016 - see the diff", 
+            "title": "mariadb-0.1.3"
+        }, 
+        {
+            "location": "/changelog/#mariadb-015", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.5  See changes in CHANGELOG.md  bumped to version 0.1.4  Code cleanup.   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Thu 15 Dec 2016 - see the diff", 
+            "title": "mariadb-0.1.5"
+        }, 
+        {
+            "location": "/changelog/#mariadb-016", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.6  Added missing file.   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Thu 15 Dec 2016 - see the diff", 
+            "title": "mariadb-0.1.6"
+        }, 
+        {
+            "location": "/changelog/#mariadb-017", 
+            "text": "Changes   See changes in CHANGELOG.md  bumped to version 0.1.7  Put MariaDB running as user/group daspanel:daspanel.   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Thu 15 Dec 2016 - see the diff", 
+            "title": "mariadb-0.1.7"
+        }, 
+        {
+            "location": "/changelog/#018", 
+            "text": "Changes   bumped to version 0.1.8  Corrected bug where root access from remote host was not allowed to grant access to new user to an database.  See changes in CHANGELOG.md  bumped to version 0.1.7  Put MariaDB running as user/group daspanel:daspanel.  See changes in CHANGELOG.md  bumped to version 0.1.6  Added missing file.  See changes in CHANGELOG.md  bumped to version 0.1.5  See changes in CHANGELOG.md  bumped to version 0.1.4  Code cleanup.  See changes in CHANGELOG.md  bumped to version 0.1.3  Chnaged where info about configuration is saved.  Chhanges needed to use alpine-base with ssmtp.  Initializations script save infor about user and password to late use.  Changed naming convention for /etc/cont-init.d to make sure initialization scripts are executed in correct order for all Daspanel containers ecosystem.  See changes in CHANGELOG.md  bumped to version 0.1.2  Added ports section to docker-compose.yml  See changes in CHANGELOG.md  bumped to version 0.1.1  first commit   Contributors   Abner G Jacobsen   Released by Abner G Jacobsen, Mon 02 Jan 2017 - see the diff", 
+            "title": "0.1.8"
+        }
+    ]
+}
