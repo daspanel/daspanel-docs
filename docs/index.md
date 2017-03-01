@@ -33,6 +33,8 @@ Make sure you have installed the following software in your computer:
 Follow the appropriate instructions for your computer in one of the links below:
 
 * [Linux](help/install/linux.md)
+* [Windows](help/install/windows.md)
+* [Mac](help/install/mac.md)
 
 ## Why Daspanel ?
 
@@ -76,5 +78,5 @@ with Amazon S3 APIs
 * And a lot more: [Flask](https://github.com/pallets/flask), 
 [MariaDB](https://mariadb.org/), [PHP 5/7](http://php.net/), 
 [TinyDB](https://github.com/msiemens/tinydb), 
-[Muicss](https://www.muicss.com/)
+[Muicss](https://www.muicss.com/), [CUID](https://github.com/ericelliott/cuid)	
 

@@ -86,13 +86,16 @@ pages:
 - About: 'index.md'
 - Installation guide:
     - 'Linux': 'help/install/linux.md'
-    - 'Usingh docker-compose': 'help/compose.md'
-    - 'Advanced': 'help/advanced.md'
-    - 'Development': 'help/development.md'
-    - 'How To': 'howto/index.md'
+    - 'Windows': 'help/install/windows.md'
+    - 'Mac': 'help/install/mac.md'
+#- User guide:
+#    - 'Usingh docker-compose': 'help/compose.md'
+#    - 'Advanced': 'help/advanced.md'
+#    - 'Development': 'help/development.md'
+#    - 'How To': 'howto/index.md'
 - Issues: 'issues.md'
 - Contributing: 'contributing.md'
 - About:
     - 'Authors': 'authors.md'
-    - 'Changelog': 'changelog.md'
+#    - 'Changelog': 'changelog.md'
 
