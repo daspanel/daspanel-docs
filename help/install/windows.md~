@@ -3,7 +3,7 @@
 ## Overview
 
 !!! warning "Work in progress"
-    Documentation not yet ready. Almost a clone of the Linux docs
+    Documentation not yet ready. Just a clone of the Linux docs
 
 You can use `Daspanel` with any Windows version supported by Docker. The only 
 requirements are that you have installed `docker` and `docker-compose` on it. 

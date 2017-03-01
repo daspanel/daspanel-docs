@@ -1,43 +1,38 @@
-# Mac Install
+
+# Site using GRAV
 
 ## Overview
 
-!!! warning "Work in progress"
-    Documentation not yet ready. Just a clone of the Linux docs
+As stated on your home page "Grav is a modern open source flat-file CMS". It is 
+widely used for website development and does not depend on any kind of database 
+server.
 
-You can use `Daspanel` with any Mac version supported by Docker. The only 
-requirements are that you have installed `docker` and `docker-compose` on it. 
-More information on how to install them can be found on these pages: 
-[docker](https://docs.docker.com/docker-for-mac/install/) and 
-[docker-compose](https://docs.docker.com/compose/install/)
+In this tutorial you will learn how to create a Grav site in Daspanel.
 
 ## Quick Start
 
-### Create directory project
+### Login
 
-A Daspanel project can contain multiple sites that usually belong to a 
-particular customer or that are related to each other. Let's assume that we are 
-going to work with **customer1** sites:
+Open the admin in your browser [http://admin.daspanel.site](http://admin.daspanel.site)
 
-``` shell
-mkdir customer1
-mkdir customer1/data
-cd customer1
-```
+[![Daspanel login](/images/daspanel-login.png)](/images/daspanel-login.png)
 
-*The `customer1/data` directory will be used to store all the data and files 
-of the sites managed by this project.*
+The admin user and your password are the ones you choose when creating your 
+project as instructed [here](/help/install/linux/#configure-daspanel).
 
-### Download config files
+### Create new site
 
-``` shell
-wget https://raw.githubusercontent.com/daspanel/daspanel/master/docker-compose.yml
-wget https://raw.githubusercontent.com/daspanel/daspanel/master/daspanel.env
-wget https://raw.githubusercontent.com/daspanel/daspanel/master/smtp.env
-```
+1. Go to the [Sites module](http://admin.daspanel.site/sites/)
 
-*Of course, you can use your browser to download the above files into the 
-`customer1` directory*
+    [![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
+
+2. Add new site clicking the "+" icone in the upper right of the Sites panel
+
+    [![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
+
+    * Write an description for your new site
+    * Choose 'Grav' as Type
+    * And 'PHP 7.0' as Engine
 
 !!! tip "Other ways to install"
     1. There is also a ZIP file that you can download with all the necessary 
@@ -102,9 +97,9 @@ To do this, edit the `daspanel.env` file and change the following settings:
 | **DASPANEL_DEBUG** | yes  | False | Only set to True in a development environment |
 
 !!! summary "daspanel.site"
-    is a domain that always resolve any address to 127.0.0.1. Using it you 
-    don't need to change your computer `hosts` file to use Daspanel in your local 
-    computer.
+    this domain and all its subdomains always resolve to 127.0.0.1. Using it you 
+    don't need to change your computer `/etc/hosts` file to use Daspanel in 
+    your local computer.
 
 ### Start Daspanel
 
