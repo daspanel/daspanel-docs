@@ -88,6 +88,9 @@ pages:
     - 'Linux': 'help/install/linux.md'
     - 'Windows': 'help/install/windows.md'
     - 'Mac': 'help/install/mac.md'
+- How To:
+    - Sites:
+        - 'Grav': 'howto/grav.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'

@@ -100,9 +100,9 @@ To do this, edit the `daspanel.env` file and change the following settings:
 | **DASPANEL_DEBUG** | yes  | False | Only set to True in a development environment |
 
 !!! summary "daspanel.site"
-    is a domain that always resolve any address to 127.0.0.1. Using it you 
-    don't need to change your computer `hosts` file to use Daspanel in your local 
-    computer.
+    this domain and all its subdomains always resolve to 127.0.0.1. Using it you 
+    don't need to change your computer `/etc/hosts` file to use Daspanel in 
+    your local computer.
 
 ### Start Daspanel
 
