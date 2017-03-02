@@ -22,18 +22,45 @@ project as instructed [here](/help/install/linux/#configure-daspanel).
 
 ### Create new site
 
-1. Go to the [Sites module](http://admin.daspanel.site/sites/)
+Go to the [Sites module](http://admin.daspanel.site/sites/)
 
-    [![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
+[![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
 
-2. Add new site clicking the "+" icone in the upper right of the Sites panel
+1. Add new site clicking the "+" icone in the upper right of the Sites panel to see the
+page with the options for the new site:
 
-    [![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
+[![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
 
-    * Write an description for your new site
-    * Choose 'Grav' as Type
-    * And 'PHP 7.0' as Engine
+1. Write an description for your new site
+2. Choose 'Grav' as Type
+3. And 'PHP 7.0' as Engine
+4. Click on the button 'CREATE SITE'
 
-3. Click on the button 'CREATE SITE'
+### Install GRAV
 
-4. WIP
+After the site has been created, a screen will be displayed to upload any remote 
+content that is in a ZIP file.
+
+[![Daspanel grav upload](/images/howto/sites-grav-upload.png)](/images/howto/sites-grav-upload.png)
+
+1. To do the installation place this link 
+[https://getgrav.org/download/core/grav-admin/1.1.17](https://getgrav.org/download/core/grav-admin/1.1.17) 
+in the URL field.
+2. Click the "UPLOAD CONTENT" button.
+
+Because the site has been created now and the ZIP file with the GRAV is 
+publicly accessible, you only have to enter the URL where to get the file.
+
+!!! tip "GRAV releases"
+    At the time this document was written the last available version was at 1.1.17. 
+    You can check the current version on the 
+    [downloads page](https://getgrav.org/downloads).
+
+### View the new site
+
+Once GRAV is installed you will see a page like this:
+
+[![Daspanel grav preview](/images/howto/sites-grav-preview.png)](/images/howto/sites-grav-preview.png)
+
+1. Click the "PREVIEW" button and a new window will open in your browser 
+displaying the contents of the active version of the site.
