@@ -207,7 +207,7 @@
         }, 
         {
             "location": "/howto/grav/", 
-            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\n\n\n\n\nGo to the \nSites module\n\n\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\n\n\n\n\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\n\n\nWIP", 
+            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall GRAV\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://getgrav.org/download/core/grav-admin/1.1.17\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nGRAV releases\n\n\nAt the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce GRAV is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.", 
             "title": "Grav"
         }, 
         {
@@ -232,8 +232,18 @@
         }, 
         {
             "location": "/howto/grav/#create-new-site", 
-            "text": "Go to the  Sites module     Add new site clicking the \"+\" icone in the upper right of the Sites panel    Write an description for your new site  Choose 'Grav' as Type  And 'PHP 7.0' as Engine     Click on the button 'CREATE SITE'    WIP", 
+            "text": "Go to the  Sites module    Add new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:     Write an description for your new site  Choose 'Grav' as Type  And 'PHP 7.0' as Engine  Click on the button 'CREATE SITE'", 
             "title": "Create new site"
+        }, 
+        {
+            "location": "/howto/grav/#install-grav", 
+            "text": "After the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.    To do the installation place this link  https://getgrav.org/download/core/grav-admin/1.1.17  \nin the URL field.  Click the \"UPLOAD CONTENT\" button.   Because the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.   GRAV releases  At the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the  downloads page .", 
+            "title": "Install GRAV"
+        }, 
+        {
+            "location": "/howto/grav/#view-the-new-site", 
+            "text": "Once GRAV is installed you will see a page like this:    Click the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.", 
+            "title": "View the new site"
         }, 
         {
             "location": "/issues/", 

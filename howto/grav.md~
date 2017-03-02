@@ -22,103 +22,45 @@ project as instructed [here](/help/install/linux/#configure-daspanel).
 
 ### Create new site
 
-1. Go to the [Sites module](http://admin.daspanel.site/sites/)
+Go to the [Sites module](http://admin.daspanel.site/sites/)
 
-    [![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
+[![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
 
-2. Add new site clicking the "+" icone in the upper right of the Sites panel
+1. Add new site clicking the "+" icone in the upper right of the Sites panel to see the
+page with the options for the new site:
 
-    [![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
+[![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
 
-    * Write an description for your new site
-    * Choose 'Grav' as Type
-    * And 'PHP 7.0' as Engine
+1. Write an description for your new site
+2. Choose 'Grav' as Type
+3. And 'PHP 7.0' as Engine
+4. Click on the button 'CREATE SITE'
 
-!!! tip "Other ways to install"
-    1. There is also a ZIP file that you can download with all the necessary 
-    content. In this case follow these steps:
-    ``` shell
-    wget https://github.com/daspanel/daspanel/archive/master.zip
-    unzip master.zip
-    mv daspanel-master customer1
-    cd customer1
-    ```
-    2. Or, use git and clone the repositorie:
-    ``` shell
-    git clone https://github.com/daspanel/daspanel.git
-    mv daspanel customer1
-    cd customer1
-    ```
+### Install GRAV
 
-### Configure email service
+After the site has been created, a screen will be displayed to upload any remote 
+content that is in a ZIP file.
 
-Probably the sites you host will need to send emails using the PHP command 
-`mail()`. In addition, Daspanel will need to send you occasional notifications. 
-To avoid SPAM issues Daspanel itself or sites hosted on it can't send emails 
-directly. You need to set up an external mail sending service.
+[![Daspanel grav upload](/images/howto/sites-grav-upload.png)](/images/howto/sites-grav-upload.png)
 
-To do this, edit the `smtp.env` file and change the following settings:
+Because the site has been created now and the ZIP file with the GRAV is 
+publicly accessible, you only have to enter the URL where to get the file.
 
-| Setting    | Required | Example  | |
-| :--------- | :------: | :------ | :------ |
-| **DASPANEL_MAIL_SERVER**      | yes  | smtp.gmail.com:587 | SMTP server address in the format `host:port` |
-| **DASPANEL_MAIL_USER** | yes  | user@gmail.com | Your login account in the SMTP server|
-| **DASPANEL_MAIL_PWD** | yes  | verygoodpassword | Password of your SMTP account |
-| **DASPANEL_MAIL_HUB** | yes  | gmail | **Do not change for now** |
+!!! tip "GRAV releases"
+    At the time this document was written the last available version was at 1.1.17. 
+    You can check the current version on the 
+    [downloads page](https://getgrav.org/downloads).
 
-!!! note ""
-    The smtp.env file you downloaded is an example of how to set up sending emails using a Gmail account. Adapt it to your preferred email provider.
+1. To do the installation place this link 
+[https://getgrav.org/download/core/grav-admin/1.1.17](https://getgrav.org/download/core/grav-admin/1.1.17) 
+in the URL field.
+2. Click the "UPLOAD CONTENT" button.
 
-### Configure Daspanel
+### View the new site
 
-#### Get a unique ID for the project
+Once GRAV is installed you will see a page like this:
 
-Every Daspanel installation must have a global unique ID (GUUID) associated 
-with it. We choose to use a type called 
-[CUID](https://github.com/ericelliott/cuid).
+[![Daspanel grav preview](/images/howto/sites-grav-preview.png)](/images/howto/sites-grav-preview.png)
 
-You can generate it in 2 ways:
-
-1. You can get one online using [getuuid.com](http://getuuid.com/)
-2. Or, download the contents of the 
-[GETUUID Project](https://github.com/daspanel/getuuid.github.io) , unzip it and 
-open the `index.html` file in your browser (it's the source code of getuuid.com).
-
-#### Edit configuration file
-
-To do this, edit the `daspanel.env` file and change the following settings:
-
-| Setting    | Required | Example  | |
-| :--------- | :------: | :------ | :------ |
-| **DASPANEL_HOST** | yes  | daspanel.site | Address of the host where Daspanel will be installed. If it's your local computer use `daspanel.site` |
-| **DASPANEL_GUUID** | yes  | ciza75wd60000335jw9ovs214 | The unique ID you obtained earlier |
-| **DASPANEL_MASTER_EMAIL** | yes  | user@gmail.com | Your email. It will be used to login as admin into the panel and as recipient of notifications messages |
-| **DASPANEL_MASTER_PASSWORD** | yes  | SomeGoodPwdd123 | The password you want to use as admin |
-| **DASPANEL_DEBUG** | yes  | False | Only set to True in a development environment |
-
-!!! summary "daspanel.site"
-    this domain and all its subdomains always resolve to 127.0.0.1. Using it you 
-    don't need to change your computer `/etc/hosts` file to use Daspanel in 
-    your local computer.
-
-### Start Daspanel
-
-Run this command and wait until Docker download's all container's images needed by Daspanel:
-
-``` shell
-docker-compose up -d
-```
-
-After the above command finishes check if the Daspanel is working by clicking 
-on this link: 
-
-[http://admin.daspanel.site](http://admin.daspanel.site)
-
-You will have to see something like this:
-
-[![Daspanel login](/images/daspanel-login.png)](/images/daspanel-login.png)
-
-!!! warning ""
-    If you modified the `DASPANEL_HOST` to an address other than `daspanel.site`, 
-    `mydomain.com` for example, the control panel URL will be 
-    http://admin.mydomain.com
+1. Click the "PREVIEW" button and a new window will open in your browser 
+displaying the contents of the active version of the site.
