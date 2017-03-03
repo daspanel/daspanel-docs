@@ -15,7 +15,7 @@ In this tutorial you will learn how to create a Grav site in Daspanel.
 
 Open the admin in your browser [http://admin.daspanel.site](http://admin.daspanel.site)
 
-[![Daspanel login](/images/daspanel-login.png)](/images/daspanel-login.png)
+[![Daspanel login](daspanel-login.png)](daspanel-login.png)
 
 The admin user and your password are the ones you choose when creating your 
 project as instructed [here](/help/install/linux/#configure-daspanel).
@@ -24,12 +24,12 @@ project as instructed [here](/help/install/linux/#configure-daspanel).
 
 Go to the [Sites module](http://admin.daspanel.site/sites/)
 
-[![Daspanel sites](/images/howto/sites-empty.png)](/images/howto/sites-empty.png)
+[![Daspanel sites](sites-empty.png)](sites-empty.png)
 
 1. Add new site clicking the "+" icone in the upper right of the Sites panel to see the
 page with the options for the new site:
 
-[![Daspanel grav new](/images/howto/sites-grav-new.png)](/images/howto/sites-grav-new.png)
+[![Daspanel grav new](sites-grav-new.png)](sites-grav-new.png)
 
 1. Write an description for your new site
 2. Choose 'Grav' as Type
@@ -41,7 +41,7 @@ page with the options for the new site:
 After the site has been created, a screen will be displayed to upload any remote 
 content that is in a ZIP file.
 
-[![Daspanel grav upload](/images/howto/sites-grav-upload.png)](/images/howto/sites-grav-upload.png)
+[![Daspanel grav upload](sites-grav-upload.png)](sites-grav-upload.png)
 
 1. To do the installation place this link 
 [https://getgrav.org/download/core/grav-admin/1.1.17](https://getgrav.org/download/core/grav-admin/1.1.17) 
@@ -60,7 +60,7 @@ publicly accessible, you only have to enter the URL where to get the file.
 
 Once GRAV is installed you will see a page like this:
 
-[![Daspanel grav preview](/images/howto/sites-grav-preview.png)](/images/howto/sites-grav-preview.png)
+[![Daspanel grav preview](sites-grav-preview.png)](sites-grav-preview.png)
 
 1. Click the "PREVIEW" button and a new window will open in your browser 
 displaying the contents of the active version of the site.

@@ -6,7 +6,7 @@ Free, open-source, server agnostic, self-hosted web hosting control panel using 
 * Free software: MIT license
 * Project: https://github.com/daspanel/daspanel
 
-[![Material for MkDocs](images/daspanel-sites.png)](images/daspanel-sites.png)
+[![Daspanel sites](help/install/img/daspanel-sites.png)](help/install/img/daspanel-sites.png)
 
 ## Features
 

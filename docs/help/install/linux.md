@@ -119,7 +119,7 @@ on this link:
 
 You will have to see something like this:
 
-[![Daspanel login](/images/daspanel-login.png)](/images/daspanel-login.png)
+[![Daspanel login](img/daspanel-login.png)](img/daspanel-login.png)
 
 !!! warning ""
     If you modified the `DASPANEL_HOST` to an address other than `daspanel.site`, 

@@ -6,7 +6,7 @@ Free, open-source, server agnostic, self-hosted web hosting control panel using 
 * Free software: MIT license
 * Project: https://github.com/daspanel/daspanel
 
-[![Material for MkDocs](docs/images/daspanel-sites.png)](docs/images/daspanel-sites.png)
+[![Daspanel sites](docs/help/install/img/daspanel-sites.png)](docs/help/install/img/daspanel-sites.png)
 
 ## Features
 
@@ -32,7 +32,9 @@ Make sure you have installed the following software in your computer:
 
 Follow the appropriate instructions for your computer in one of the links below:
 
-* [Linux](help/install/linux.md)
+* [Linux](http://docs.daspanel.com/help/install/linux.md)
+* [Windows](http://docs.daspanel.com/help/install/windows.md)
+* [Mac](http://docs.daspanel.com/help/install/mac.md)
 
 ## Why Daspanel ?
 
@@ -76,5 +78,5 @@ with Amazon S3 APIs
 * And a lot more: [Flask](https://github.com/pallets/flask), 
 [MariaDB](https://mariadb.org/), [PHP 5/7](http://php.net/), 
 [TinyDB](https://github.com/msiemens/tinydb), 
-[Muicss](https://www.muicss.com/)
+[Muicss](https://www.muicss.com/), [CUID](https://github.com/ericelliott/cuid)	
 

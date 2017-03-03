@@ -90,7 +90,7 @@ pages:
     - 'Mac': 'help/install/mac.md'
 - How To:
     - Sites:
-        - 'Grav': 'howto/grav.md'
+        - 'Grav': 'howto/grav/index.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'
