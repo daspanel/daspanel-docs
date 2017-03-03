@@ -32,9 +32,9 @@ Make sure you have installed the following software in your computer:
 
 Follow the appropriate instructions for your computer in one of the links below:
 
-* [Linux](http://docs.daspanel.com/help/install/linux.md)
-* [Windows](http://docs.daspanel.com/help/install/windows.md)
-* [Mac](http://docs.daspanel.com/help/install/mac.md)
+* [Linux](http://docs.daspanel.com/help/install/linux)
+* [Windows](http://docs.daspanel.com/help/install/windows)
+* [Mac](http://docs.daspanel.com/help/install/mac)
 
 ## Why Daspanel ?
 
