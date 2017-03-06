@@ -64,3 +64,34 @@ Once GRAV is installed you will see a page like this:
 
 1. Click the "PREVIEW" button and a new window will open in your browser 
 displaying the contents of the active version of the site.
+
+Now just complete the GRAV setup in the new window that appears in your browser.
+
+[![Daspanel grav setup](grav-adminsetup.png)](grav-adminsetup.png)
+
+## Site URL
+
+For each site created in Daspanel is automatically assigned a unique URL that 
+allows the display of the content of it in your browser. Here is an example:
+
+`http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site`
+
+* The *cizszr02x000m70nzm02dy4f3* segment of the URL matches the unique ID automatically 
+assigned to the site when it was created.
+
+* And *daspanel.site* is the name of the host where the control panel is running. 
+This name is usually set using the DASPANEL_HOST variable that you configured in the `daspanel.env` file.
+
+You can have a more user-friendly URL by editing the site:
+
+[![Daspanel grav preview](sites-grav-preview.png)](sites-grav-preview.png)
+
+<a href="http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site" target="_blank"></a>
+
+<p align="center">
+  <b><a href="http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site" target="_blank">http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site</a></b><br>
+</p>
+
+
+
+
