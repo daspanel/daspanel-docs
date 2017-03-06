@@ -206,8 +206,138 @@
             "title": "Start Daspanel"
         }, 
         {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Concepts"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Components"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Add"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/sites/edit/", 
+            "text": "Site edit\n\n\nGo to the \nSites module\n\n\n\n\n\n\nClick the \"EDIT\" button of the site you want edit.\n\n\n\n\nYou'll see a new page to edit the site:\n\n\n\n\n\n\nDescription\n: Write an description for the site\n\n\n\n\nUrl Prefix\n: Any name that will be used to form the site access URL, e.x: test1\n\n\n\n\nFor each site created in Daspanel is automatically assigned a unique URL that \nallows the display of the content of it in your browser. Here is an example:\n\n\nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site\n\n\n\n\n\n\nThe \ncizszr02x000m70nzm02dy4f3\n segment of the URL matches the unique ID automatically \nassigned to the site when it was created.\n\n\n\n\n\n\nAnd \ndaspanel.site\n is the name of the host where the control panel is running. \nThis name is usually set using the DASPANEL_HOST variable that you configured in the \ndaspanel.env\n file.\n\n\n\n\n\n\nIf you change the Url Prefix field to \ntest1\n, for example, the site can be \naccessed both by the primary as well as by using the custom address as follows:\n\n\nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site\n \n\n\nhttp://test1.sites.daspanel.site\n\n\nOnly letters and numbers are allowed in this field.\n\n\nThe chosen name must be unique, it cannot be in use by another site.\n\n\n\n\n\n\n\n\nSave the changes by clicking the \nUPDATE SITE\n button.\n\n\n\n\nOr click the \nleft arrow\n \n at the top of \nthe screen to return without saving anything.\n\n\n\n\nWhen you change a site, Daspanel automatically notifies the HTTP server and \nLoad Balancer containers to update with the new information.", 
+            "title": "Edit"
+        }, 
+        {
+            "location": "/help/sites/edit/#site-edit", 
+            "text": "Go to the  Sites module    Click the \"EDIT\" button of the site you want edit.   You'll see a new page to edit the site:    Description : Write an description for the site   Url Prefix : Any name that will be used to form the site access URL, e.x: test1   For each site created in Daspanel is automatically assigned a unique URL that \nallows the display of the content of it in your browser. Here is an example:  http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site    The  cizszr02x000m70nzm02dy4f3  segment of the URL matches the unique ID automatically \nassigned to the site when it was created.    And  daspanel.site  is the name of the host where the control panel is running. \nThis name is usually set using the DASPANEL_HOST variable that you configured in the  daspanel.env  file.    If you change the Url Prefix field to  test1 , for example, the site can be \naccessed both by the primary as well as by using the custom address as follows:  http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site    http://test1.sites.daspanel.site  Only letters and numbers are allowed in this field.  The chosen name must be unique, it cannot be in use by another site.     Save the changes by clicking the  UPDATE SITE  button.   Or click the  left arrow    at the top of \nthe screen to return without saving anything.   When you change a site, Daspanel automatically notifies the HTTP server and \nLoad Balancer containers to update with the new information.", 
+            "title": "Site edit"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Delete"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Control"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Versions"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Redirects"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Content Upload"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "Database Manager"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
+            "location": "/help/wip/", 
+            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "title": "File Manager"
+        }, 
+        {
+            "location": "/help/wip/#work-in-progress", 
+            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
+            "title": "Work In Progress"
+        }, 
+        {
             "location": "/howto/grav/", 
-            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall GRAV\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://getgrav.org/download/core/grav-admin/1.1.17\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nGRAV releases\n\n\nAt the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce GRAV is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.", 
+            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall GRAV\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://getgrav.org/download/core/grav-admin/1.1.17\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nGRAV releases\n\n\nAt the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce GRAV is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\nNow just complete the GRAV setup in the new window that appears in your browser.\n\n\n\n\nSite URL\n\n\nFor each site created in Daspanel is automatically assigned a unique URL that \nallows the display of the content of it in your browser. Here is an example:\n\n\nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site\n\n\n\n\n\n\nThe \ncizszr02x000m70nzm02dy4f3\n segment of the URL matches the unique ID automatically \nassigned to the site when it was created.\n\n\n\n\n\n\nAnd \ndaspanel.site\n is the name of the host where the control panel is running. \nThis name is usually set using the DASPANEL_HOST variable that you configured in the \ndaspanel.env\n file.\n\n\n\n\n\n\nYou can have a more user-friendly URL by editing the site:\n\n\n\n\n\n\n\n  \nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site", 
             "title": "Grav"
         }, 
         {
@@ -242,8 +372,13 @@
         }, 
         {
             "location": "/howto/grav/#view-the-new-site", 
-            "text": "Once GRAV is installed you will see a page like this:    Click the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.", 
+            "text": "Once GRAV is installed you will see a page like this:    Click the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.   Now just complete the GRAV setup in the new window that appears in your browser.", 
             "title": "View the new site"
+        }, 
+        {
+            "location": "/howto/grav/#site-url", 
+            "text": "For each site created in Daspanel is automatically assigned a unique URL that \nallows the display of the content of it in your browser. Here is an example:  http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site    The  cizszr02x000m70nzm02dy4f3  segment of the URL matches the unique ID automatically \nassigned to the site when it was created.    And  daspanel.site  is the name of the host where the control panel is running. \nThis name is usually set using the DASPANEL_HOST variable that you configured in the  daspanel.env  file.    You can have a more user-friendly URL by editing the site:    \n   http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site", 
+            "title": "Site URL"
         }, 
         {
             "location": "/issues/", 
