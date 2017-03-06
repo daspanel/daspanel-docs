@@ -81,7 +81,11 @@ assigned to the site when it was created.
 
 * And *daspanel.site* is the name of the host where the control panel is running. 
 This name is usually set using the DASPANEL_HOST variable that you configured in the `daspanel.env` file.
- 
+
+You can have a more user-friendly URL by editing the site:
+
+[![Daspanel grav preview](sites-grav-preview.png)](sites-grav-preview.png)
+
 <a href="http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site" target="_blank"></a>
 
 <p align="center">
