@@ -279,13 +279,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-email-service" title="Configure email service" class="md-nav__link">
-    Configure email service
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#configure-daspanel" title="Configure Daspanel" class="md-nav__link">
     Configure Daspanel
   </a>
@@ -321,6 +314,40 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emails-notifications" title="Emails &amp; Notifications" class="md-nav__link">
+    Emails &amp; Notifications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#login-credentials" title="Login credentials" class="md-nav__link">
+    Login credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns-settings" title="DNS Settings" class="md-nav__link">
+    DNS Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" title="Next Steps" class="md-nav__link">
+    Next Steps
+  </a>
   
 </li>
       
@@ -656,6 +683,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../howto/htmljs/" title="Static HTML/JS" class="md-nav__link">
+      Static HTML/JS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../howto/grav/" title="Grav" class="md-nav__link">
       Grav
     </a>
@@ -782,13 +821,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#configure-email-service" title="Configure email service" class="md-nav__link">
-    Configure email service
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#configure-daspanel" title="Configure Daspanel" class="md-nav__link">
     Configure Daspanel
   </a>
@@ -824,6 +856,40 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emails-notifications" title="Emails &amp; Notifications" class="md-nav__link">
+    Emails &amp; Notifications
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#login-credentials" title="Login credentials" class="md-nav__link">
+    Login credentials
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dns-settings" title="DNS Settings" class="md-nav__link">
+    DNS Settings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" title="Next Steps" class="md-nav__link">
+    Next Steps
+  </a>
   
 </li>
       
@@ -865,7 +931,6 @@ of the sites managed by this project.</em></p>
 <h3 id="download-config-files">Download config files<a class="headerlink" href="#download-config-files" title="Permanent link">&para;</a></h3>
 <div class="codehilite"><pre><span></span>wget https://raw.githubusercontent.com/daspanel/daspanel/master/docker-compose.yml
 wget https://raw.githubusercontent.com/daspanel/daspanel/master/daspanel.env
-wget https://raw.githubusercontent.com/daspanel/daspanel/master/smtp.env
 </pre></div>
 
 
@@ -889,51 +954,6 @@ mv daspanel customer1
 </pre></div>
 </li>
 </ol>
-</div>
-<h3 id="configure-email-service">Configure email service<a class="headerlink" href="#configure-email-service" title="Permanent link">&para;</a></h3>
-<p>Probably the sites you host will need to send emails using the PHP command 
-<code>mail()</code>. In addition, Daspanel will need to send you occasional notifications. 
-To avoid SPAM issues Daspanel itself or sites hosted on it can't send emails 
-directly. You need to set up an external mail sending service.</p>
-<p>To do this, edit the <code>smtp.env</code> file and change the following settings:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Setting</th>
-<th align="center">Required</th>
-<th align="left">Example</th>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><strong>DASPANEL_MAIL_SERVER</strong></td>
-<td align="center">yes</td>
-<td align="left">smtp.gmail.com:587</td>
-<td align="left">SMTP server address in the format <code>host:port</code></td>
-</tr>
-<tr>
-<td align="left"><strong>DASPANEL_MAIL_USER</strong></td>
-<td align="center">yes</td>
-<td align="left"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></td>
-<td align="left">Your login account in the SMTP server</td>
-</tr>
-<tr>
-<td align="left"><strong>DASPANEL_MAIL_PWD</strong></td>
-<td align="center">yes</td>
-<td align="left">verygoodpassword</td>
-<td align="left">Password of your SMTP account</td>
-</tr>
-<tr>
-<td align="left"><strong>DASPANEL_MAIL_HUB</strong></td>
-<td align="center">yes</td>
-<td align="left">gmail</td>
-<td align="left"><strong>Do not change for now</strong></td>
-</tr>
-</tbody>
-</table>
-<div class="admonition note">
-<p>The smtp.env file you downloaded is an example of how to set up sending emails using a Gmail account. Adapt it to your preferred email provider.</p>
 </div>
 <h3 id="configure-daspanel">Configure Daspanel<a class="headerlink" href="#configure-daspanel" title="Permanent link">&para;</a></h3>
 <h4 id="get-a-unique-id-for-the-project">Get a unique ID for the project<a class="headerlink" href="#get-a-unique-id-for-the-project" title="Permanent link">&para;</a></h4>
@@ -960,32 +980,32 @@ open the <code>index.html</code> file in your browser (it's the source code of g
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>DASPANEL_HOST</strong></td>
-<td align="center">yes</td>
-<td align="left">daspanel.site</td>
-<td align="left">Address of the host where Daspanel will be installed. If it's your local computer use <code>daspanel.site</code></td>
-</tr>
-<tr>
-<td align="left"><strong>DASPANEL_GUUID</strong></td>
+<td align="left"><strong>DASPANEL_SYS_UUID</strong></td>
 <td align="center">yes</td>
 <td align="left">ciza75wd60000335jw9ovs214</td>
 <td align="left">The unique ID you obtained earlier</td>
 </tr>
 <tr>
-<td align="left"><strong>DASPANEL_MASTER_EMAIL</strong></td>
-<td align="center">yes</td>
+<td align="left"><strong>DASPANEL_SYS_HOST</strong></td>
+<td align="center">no</td>
+<td align="left">daspanel.site</td>
+<td align="left">Address of the host where Daspanel will be installed. If it's your local computer use <code>daspanel.site</code>.If you have installed it on a public server, enter its DNS address here, such as <code>mydomain.com</code>.</td>
+</tr>
+<tr>
+<td align="left"><strong>DASPANEL_SYS_ADMIN</strong></td>
+<td align="center">no</td>
 <td align="left"><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#117;&#115;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></td>
-<td align="left">Your email. It will be used to login as admin into the panel and as recipient of notifications messages</td>
+<td align="left">Your email. It will be used to login as admin into the panel and as recipient of notifications messages. If you do not configure this variable the default will be <code>admin@</code> + the value of <code>DASPANEL_SYS_HOST</code>. Like <code>admin@daspanel.site</code>.</td>
 </tr>
 <tr>
-<td align="left"><strong>DASPANEL_MASTER_PASSWORD</strong></td>
-<td align="center">yes</td>
+<td align="left"><strong>DASPANEL_SYS_PASSWORD</strong></td>
+<td align="center">no</td>
 <td align="left">SomeGoodPwdd123</td>
-<td align="left">The password you want to use as admin</td>
+<td align="left">The password you want to use as admin. If you do not enter a password the system will automatically generate one for you.</td>
 </tr>
 <tr>
-<td align="left"><strong>DASPANEL_DEBUG</strong></td>
-<td align="center">yes</td>
+<td align="left"><strong>DASPANEL_SYS_DEBUG</strong></td>
+<td align="center">no</td>
 <td align="left">False</td>
 <td align="left">Only set to True in a development environment</td>
 </tr>
@@ -1009,10 +1029,107 @@ on this link: </p>
 <p>You will have to see something like this:</p>
 <p><a href="../img/daspanel-login.png"><img alt="Daspanel login" src="../img/daspanel-login.png" /></a></p>
 <div class="admonition warning">
-<p>If you modified the <code>DASPANEL_HOST</code> to an address other than <code>daspanel.site</code>, 
+<p>If you modified the <code>DASPANEL_SYS_HOST</code> to an address other than <code>daspanel.site</code>, 
 <code>mydomain.com</code> for example, the control panel URL will be 
 <a href="http://admin.mydomain.com">http://admin.mydomain.com</a></p>
 </div>
+<p>If you did not configured your own password in the <code>daspanel.env</code> file, see the 
+<a href="../../../help/install/linux/#login-credentials">Login credentials</a> section on how to find out the password 
+to be used to login to the control panel.</p>
+<h2 id="emails-notifications">Emails &amp; Notifications<a class="headerlink" href="#emails-notifications" title="Permanent link">&para;</a></h2>
+<p>To avoid sending spam DASPANEL never send emails directly and captures all attempts 
+to send email from its applications and the sites hosted on it, except for your 
+sites that use external SMTP servers.</p>
+<p>To view these emails as well as system notifications, go to this URL:</p>
+<p><a href="http://mail.svc.daspanel.site"><a href="http://mail.svc.daspanel.site">http://mail.svc.daspanel.site</a></a></p>
+<div class="admonition warning">
+<p>If you modified the <code>DASPANEL_SYS_HOST</code> to an address other than <code>daspanel.site</code>, 
+<code>mydomain.com</code> for example, the URL will be 
+<a href="http://mail.svc.mydomain.com">http://mail.svc.mydomain.com</a></p>
+</div>
+<p>Use <em><a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#97;&#100;&#109;&#105;&#110;&#64;&#100;&#97;&#115;&#112;&#97;&#110;&#101;&#108;&#46;&#115;&#105;&#116;&#101;">&#97;&#100;&#109;&#105;&#110;&#64;&#100;&#97;&#115;&#112;&#97;&#110;&#101;&#108;&#46;&#115;&#105;&#116;&#101;</a></em> as user login unless you have changed the 
+<em>DASPANEL_SYS_ADMIN</em> and/or <em>DASPANEL_SYS_HOST</em> variables in the <code>daspanel.env</code> 
+file. The password will always be the same as the <em>DASPANEL_SYS_UUID</em> value.</p>
+<p>After logging in, a screen like the one below will be displayed:</p>
+<p><a href="../img/daspanel-catcher.png"><img alt="Daspanel msgs" src="../img/daspanel-catcher.png" /></a></p>
+<p>Every email sent by your sites that does not use an external SMTP server, or any 
+DASPANEL notification will be here. <strong>IMPORTANT:</strong> these messages are stored in 
+memory, when the containers stop they disappear.</p>
+<h3 id="login-credentials">Login credentials<a class="headerlink" href="#login-credentials" title="Permanent link">&para;</a></h3>
+<p>Click on the most recent message with the subject <code>DASPANEL instance c...</code> and in it 
+you will find all the necessary information to access the control panel.</p>
+<p><a href="../img/daspanel-catcher-creds.png"><img alt="Daspanel creds" src="../img/daspanel-catcher-creds.png" /></a></p>
+<h2 id="dns-settings">DNS Settings<a class="headerlink" href="#dns-settings" title="Permanent link">&para;</a></h2>
+<p>To use DASPANEL on a public server, accessible on the Internet, you 
+will need to configure the DNS of the domain to which it is associated.</p>
+<p>Each DNS provider has its way of being configured, but, you need to have some 
+configuration like:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Address</th>
+<th align="left">Points To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>[DASPANEL_SYS_HOST]</strong></td>
+<td align="left">IP of the server</td>
+</tr>
+<tr>
+<td align="left"><strong>admin.[DASPANEL_SYS_HOST]</strong></td>
+<td align="left">IP of the server</td>
+</tr>
+<tr>
+<td align="left"><strong>*.svc.[DASPANEL_SYS_HOST]</strong></td>
+<td align="left">IP of the server</td>
+</tr>
+<tr>
+<td align="left"><strong>*.sites.[DASPANEL_SYS_HOST]</strong></td>
+<td align="left">IP of the server</td>
+</tr>
+</tbody>
+</table>
+<p>For example: if you have it installed on a public server with IP address equal 
+<em>192.241.177.42</em> with the domain <code>mydomain.com</code>(<strong>DASPANEL_SYS_HOST</strong>), the DNS 
+server of the domain would have to be configured as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Address</th>
+<th align="left">Points To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><strong>mydomain.com</strong></td>
+<td align="left">192.241.177.42</td>
+</tr>
+<tr>
+<td align="left"><strong>admin.mydomain.com</strong></td>
+<td align="left">192.241.177.42</td>
+</tr>
+<tr>
+<td align="left"><strong>*.svc.mydomain.com</strong></td>
+<td align="left">192.241.177.42</td>
+</tr>
+<tr>
+<td align="left"><strong>*.sites.mydomain.com</strong></td>
+<td align="left">192.241.177.42</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition warning">
+<p>DASPANEL will only work on a public server if you configure the 
+<em>DASPANEL_SYS_HOST</em> variable in the <code>daspanel.env</code> file for a valid DNS 
+address other than <strong><em>daspanel.site</em></strong>.</p>
+</div>
+<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../../../howto/htmljs/">Create static website</a></li>
+<li><a href="../../../howto/grav/">Create GRAV website</a></li>
+<li><a href="../../../howto/wp/">Create Wordpress site</a></li>
+</ul>
               
               
             </article>
