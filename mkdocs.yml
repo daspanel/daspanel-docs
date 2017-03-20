@@ -108,6 +108,7 @@ pages:
         - File Manager: 'help/wip.md'
 - How To:
     - Sites:
+        - 'Static HTML/JS': 'howto/htmljs/index.md'
         - 'Grav': 'howto/grav/index.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
