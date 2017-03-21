@@ -89,25 +89,26 @@ pages:
     - 'Windows': 'help/install/windows.md'
     - 'Mac': 'help/install/mac.md'
 - User Guide:
-    - Overview: 'help/wip.md'
-    - Understanding Daspanel:
-        - Concepts: 'help/wip.md'
-        - Architecture: 'help/wip.md'
-        - Components: 'help/wip.md'
+#    - Overview: 'help/wip.md'
+#    - Understanding Daspanel:
+#        - Concepts: 'help/wip.md'
+#        - Architecture: 'help/wip.md'
+#        - Components: 'help/wip.md'
     - Sites:
 #        - Overview: 'help/wip.md'
-        - Add: 'help/wip.md'
+#        - Add: 'help/wip.md'
         - Edit: 'help/sites/edit.md'
-        - Delete: 'help/wip.md'
-        - Control: 'help/wip.md'
-        - Versions: 'help/wip.md'
-        - Redirects: 'help/wip.md'
-        - Content Upload: 'help/wip.md'
+#        - Delete: 'help/wip.md'
+#        - Control: 'help/wip.md'
+#        - Versions: 'help/wip.md'
+#        - Redirects: 'help/wip.md'
+#        - Content Upload: 'help/wip.md'
     - Services:
-        - Database Manager: 'help/wip.md'
-        - File Manager: 'help/wip.md'
+        - Database Manager: 'help/services/adminer.md'
+        - File Manager: 'help/services/filemanager.md'
 - How To:
     - Sites:
+        - 'Wordpress': 'howto/wp/index.md'
         - 'Static HTML/JS': 'howto/htmljs/index.md'
         - 'Grav': 'howto/grav/index.md'
 #- User guide:

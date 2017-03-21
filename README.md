@@ -1,4 +1,3 @@
-
 # Daspanel
 
 Free, open-source, server agnostic, self-hosted web hosting control panel using Docker

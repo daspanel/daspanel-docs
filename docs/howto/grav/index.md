@@ -72,7 +72,7 @@ Now just complete the GRAV setup in the new window that appears in your browser.
 ## Next Steps
 
 * [Choose a friendly URL for the new site](/help/sites/edit.md)
-
+* [Make custom changes to site files](/help/services/filemanager.md)
 
 <p align="center">
   <b><a href="http://docs.daspanel.com" target="_blank">Docs Home</a></b><br>
