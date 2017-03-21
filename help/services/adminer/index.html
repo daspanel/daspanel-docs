@@ -9,7 +9,7 @@
         <meta name="description" content="Daspanel documentation.">
       
       
-        <link rel="canonical" href="https://daspanel.github.io/daspanel/help/sites/edit/">
+        <link rel="canonical" href="https://daspanel.github.io/daspanel/help/services/adminer/">
       
       
         <meta name="author" content="Abner G Jacobsen">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Edit - Daspanel</title>
+        <title>Database Manager - Daspanel</title>
       
     
     
@@ -87,11 +87,11 @@
                 </span>
               
                 <span class="md-header-nav__parent">
-                  Sites
+                  Services
                 </span>
               
             
-            Edit
+            Database Manager
           
         </span>
       </div>
@@ -285,12 +285,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       Sites
@@ -298,6 +296,44 @@
     <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-3-1">
         Sites
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../sites/edit/" title="Edit" class="md-nav__link">
+      Edit
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
+    
+    <label class="md-nav__link" for="nav-3-2">
+      Services
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-3-2">
+        Services
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -316,46 +352,49 @@
       
     
     
-    <a href="./" title="Edit" class="md-nav__link md-nav__link--active">
-      Edit
-    </a>
-    
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item md-nav__item--nested">
-    
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
-    
-    <label class="md-nav__link" for="nav-3-2">
-      Services
-    </label>
-    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
-      <label class="md-nav__title" for="nav-3-2">
-        Services
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Database Manager
       </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../services/adminer/" title="Database Manager" class="md-nav__link">
+    
+    <a href="./" title="Database Manager" class="md-nav__link md-nav__link--active">
       Database Manager
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-it" title="Accessing it" class="md-nav__link">
+    Accessing it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" title="Create database" class="md-nav__link">
+    Create database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database-user" title="Create database user" class="md-nav__link">
+    Create database user
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -365,7 +404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../services/filemanager/" title="File Manager" class="md-nav__link">
+    <a href="../filemanager/" title="File Manager" class="md-nav__link">
       File Manager
     </a>
   </li>
@@ -542,6 +581,32 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-it" title="Accessing it" class="md-nav__link">
+    Accessing it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" title="Create database" class="md-nav__link">
+    Create database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database-user" title="Create database user" class="md-nav__link">
+    Create database user
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -551,52 +616,94 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
                
-                 <a href="https://github.com/daspanel/daspanel/edit/master/docs/help/sites/edit.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+                 <a href="https://github.com/daspanel/daspanel/edit/master/docs/help/services/adminer.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
                
               
                 
-                <h1 id="site-edit">Site edit<a class="headerlink" href="#site-edit" title="Permanent link">&para;</a></h1>
-<p>Go to the <a href="http://admin.daspanel.site/sites/">Sites module</a></p>
-<p><a href="../img/sites-list-edit.png"><img alt="Daspanel sites list" src="../img/sites-list-edit.png" /></a></p>
-<ol>
-<li>Click the "EDIT" button of the site you want edit.</li>
-</ol>
-<p>You'll see a new page to edit the site:</p>
-<p><a href="../img/site-edit.png"><img alt="Daspanel sites edit" src="../img/site-edit.png" /></a></p>
-<ol>
-<li><strong>Description</strong>: Write an description for the site</li>
-<li>
-<p><strong>Url Prefix</strong>: Any name that will be used to form the site access URL, e.x: test1</p>
+                <h1 id="database-manager">Database manager<a class="headerlink" href="#database-manager" title="Permanent link">&para;</a></h1>
+<p>One of the services offered by Daspanel is the database manager. For this service 
+the chosen tool is the <b><a href="https://www.adminer.org/" target="_blank">Adminer</a></b>.
+We chose it because in addition to MySql it works with a number of other types of databases.</p>
 <div class="admonition note">
-<p>For each site created in Daspanel is automatically assigned a unique URL that 
-allows the display of the content of it in your browser. Here is an example:</p>
-<p><code>http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site</code></p>
-<ul>
-<li>
-<p>The <em>cizszr02x000m70nzm02dy4f3</em> segment of the URL matches the unique ID automatically 
-assigned to the site when it was created.</p>
-</li>
-<li>
-<p>And <em>daspanel.site</em> is the name of the host where the control panel is running. 
-This name is usually set using the DASPANEL_HOST variable that you configured in the <code>daspanel.env</code> file.</p>
-</li>
-</ul>
-<p>If you change the Url Prefix field to <em>test1</em>, for example, the site can be 
-accessed both by the primary as well as by using the custom address as follows:</p>
-<p><code>http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site</code> </p>
-<p><code>http://test1.sites.daspanel.site</code></p>
-<p><em>Only letters and numbers are allowed in this field.</em></p>
-<p><em>The chosen name must be unique, it cannot be in use by another site.</em></p>
+<p>Daspanel comes with a container running a MySql database server, more 
+specifically the <a href="https://mariadb.org/" target="_blank">MariaDB 10</a>.
+It can be used for the local development of sites and also in the public hosting of them.</p>
 </div>
-</li>
-<li>
-<p>Save the changes by clicking the <strong>UPDATE SITE</strong> button.</p>
-</li>
-<li>Or click the <strong>left arrow</strong> <img alt="Alt" src="../img/back-arrow.png" title="Back" /> at the top of 
-the screen to return without saving anything.</li>
+<h2 id="accessing-it">Accessing it<a class="headerlink" href="#accessing-it" title="Permanent link">&para;</a></h2>
+<p>In the control panel click the services menu</p>
+<p><a href="../../../img/services-menu.png"><img alt="Daspanel services menu" src="../../../img/services-menu.png" /></a></p>
+<p>On the next screen where all avaiable services are listed.</p>
+<p><a href="../img/open-db-manager.png"><img alt="Daspanel services dbmanager" src="../img/open-db-manager.png" /></a></p>
+<ol>
+<li>Click this buttom to open the database manager service.</li>
 </ol>
-<p>When you change a site, Daspanel automatically notifies the HTTP server and 
-Load Balancer containers to update with the new information.</p>
+<div class="admonition tip">
+<p>You can directly access the database manager by opening the url 
+<b><a href="http://adminer.svc.daspanel.site" target="_blank">adminer.svc.daspanel.site</a></b>
+in your browser.</p>
+</div>
+<p>A new window will open in your browser to enter the login data on the database server. 
+In the example below we will show you how to log in to the Daspanel MySql server, 
+for other servers that you want to use, just use the appropriate credentials.</p>
+<p><a href="../img/adminer-login.png"><img alt="Daspanel adminer login" src="../img/adminer-login.png" /></a></p>
+<ol>
+<li><strong>System</strong>: Select "MySQL"</li>
+<li><strong>Server</strong>: Enter "daspanel-mysql" as the server address. If you are going to use an external server, please enter its valid address here.</li>
+<li><strong>Username</strong>: Enter "root"</li>
+<li><strong>Password</strong>: Inform the admin password.</li>
+<li>Click the login button.</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Admin password</p>
+<p>If you have not set the password manually in the <code>daspanel.env</code> file, 
+visit the link below to see the notification email containing the password 
+that was automatically generated for your installation.
+<p align="center">
+    <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
+</p></p>
+</div>
+<h2 id="create-database">Create database<a class="headerlink" href="#create-database" title="Permanent link">&para;</a></h2>
+<p>Let's say we want to create a database for Wordpress. Being in the Adminer main screen:</p>
+<p><a href="../img/adminer-main-newdb.png"><img alt="Daspanel adminer main" src="../img/adminer-main-newdb.png" /></a></p>
+<p>On the next page</p>
+<p><a href="../img/adminer-createdb.png"><img alt="Daspanel adminer create db" src="../img/adminer-createdb.png" /></a></p>
+<ol>
+<li>Enter the database name</li>
+<li>Select collation type, the recommended one is <strong>utf8_general_ci</strong></li>
+<li>Click the Save button to create the database</li>
+</ol>
+<h2 id="create-database-user">Create database user<a class="headerlink" href="#create-database-user" title="Permanent link">&para;</a></h2>
+<p>On the page that displays database details</p>
+<p><a href="../img/adminer-db-privileges.png"><img alt="Daspanel adminer db privileges" src="../img/adminer-db-privileges.png" /></a></p>
+<ol>
+<li><strong>Privileges</strong>: Click this link</li>
+</ol>
+<p>On the next page you can associate existing users with the database or create a 
+new user and associate it with the database.</p>
+<p><a href="../img/adminer-privileges-main.png"><img alt="Daspanel adminer privileges main" src="../img/adminer-privileges-main.png" /></a></p>
+<ol>
+<li><strong>Create user</strong>: Click this link to add new database user</li>
+</ol>
+<p>On the next page we will add our new user:</p>
+<p><a href="../img/adminer-privileges-add.png"><img alt="Daspanel adminer db privileges" src="../img/adminer-privileges-add.png" /></a></p>
+<ol>
+<li><strong>Server</strong>: Put % here.</li>
+<li><strong>Username</strong>: Choose the login username</li>
+<li><strong>Password</strong>: Choose a good password and put here</li>
+<li><strong>All privileges</strong>: Mark this oiption</li>
+<li><strong>Grant option</strong>: Mark it to allow the user add anothers users</li>
+<li>Click the save button to create the new user</li>
+</ol>
+<div class="admonition warning">
+<p class="admonition-title">Security</p>
+<ol>
+<li>The Daspanel MySQL container can only be accessed by the other docker containers 
+that are on your internal network created by <code>docker-compose</code>, so it is not 
+so dangerous to use <strong>%</strong> in the host field.</li>
+<li>To simplify the example we created a user with all the powers in relation to the database 
+to which he was associated, of course you can opt in a more rigid control of the granted permissions.</li>
+</ol>
+</div>
               
               
             </article>
@@ -610,7 +717,7 @@ Load Balancer containers to update with the new information.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../install/mac/" title="Mac" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../sites/edit/" title="Edit" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -619,19 +726,19 @@ Load Balancer containers to update with the new information.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mac
+                Edit
               </span>
             </div>
           </a>
         
         
-          <a href="../../services/adminer/" title="Database Manager" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../filemanager/" title="File Manager" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Database Manager
+                File Manager
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

@@ -251,56 +251,6 @@
             "title": "Next Steps"
         }, 
         {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Overview"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Concepts"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Architecture"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Components"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Add"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
             "location": "/help/sites/edit/", 
             "text": "Site edit\n\n\nGo to the \nSites module\n\n\n\n\n\n\nClick the \"EDIT\" button of the site you want edit.\n\n\n\n\nYou'll see a new page to edit the site:\n\n\n\n\n\n\nDescription\n: Write an description for the site\n\n\n\n\nUrl Prefix\n: Any name that will be used to form the site access URL, e.x: test1\n\n\n\n\nFor each site created in Daspanel is automatically assigned a unique URL that \nallows the display of the content of it in your browser. Here is an example:\n\n\nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site\n\n\n\n\n\n\nThe \ncizszr02x000m70nzm02dy4f3\n segment of the URL matches the unique ID automatically \nassigned to the site when it was created.\n\n\n\n\n\n\nAnd \ndaspanel.site\n is the name of the host where the control panel is running. \nThis name is usually set using the DASPANEL_HOST variable that you configured in the \ndaspanel.env\n file.\n\n\n\n\n\n\nIf you change the Url Prefix field to \ntest1\n, for example, the site can be \naccessed both by the primary as well as by using the custom address as follows:\n\n\nhttp://cizszr02x000m70nzm02dy4f3.sites.daspanel.site\n \n\n\nhttp://test1.sites.daspanel.site\n\n\nOnly letters and numbers are allowed in this field.\n\n\nThe chosen name must be unique, it cannot be in use by another site.\n\n\n\n\n\n\n\n\nSave the changes by clicking the \nUPDATE SITE\n button.\n\n\n\n\nOr click the \nleft arrow\n \n at the top of \nthe screen to return without saving anything.\n\n\n\n\nWhen you change a site, Daspanel automatically notifies the HTTP server and \nLoad Balancer containers to update with the new information.", 
             "title": "Edit"
@@ -311,78 +261,108 @@
             "title": "Site edit"
         }, 
         {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Delete"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Control"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Versions"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Redirects"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
-            "title": "Content Upload"
-        }, 
-        {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
-        }, 
-        {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "location": "/help/services/adminer/", 
+            "text": "Database manager\n\n\nOne of the services offered by Daspanel is the database manager. For this service \nthe chosen tool is the \nAdminer\n.\nWe chose it because in addition to MySql it works with a number of other types of databases.\n\n\n\n\nDaspanel comes with a container running a MySql database server, more \nspecifically the \nMariaDB 10\n.\nIt can be used for the local development of sites and also in the public hosting of them.\n\n\n\n\nAccessing it\n\n\nIn the control panel click the services menu\n\n\n\n\nOn the next screen where all avaiable services are listed.\n\n\n\n\n\n\nClick this buttom to open the database manager service.\n\n\n\n\n\n\nYou can directly access the database manager by opening the url \n\nadminer.svc.daspanel.site\n\nin your browser.\n\n\n\n\nA new window will open in your browser to enter the login data on the database server. \nIn the example below we will show you how to log in to the Daspanel MySql server, \nfor other servers that you want to use, just use the appropriate credentials.\n\n\n\n\n\n\nSystem\n: Select \"MySQL\"\n\n\nServer\n: Enter \"daspanel-mysql\" as the server address. If you are going to use an external server, please enter its valid address here.\n\n\nUsername\n: Enter \"root\"\n\n\nPassword\n: Inform the admin password.\n\n\nClick the login button.\n\n\n\n\n\n\nAdmin password\n\n\nIf you have not set the password manually in the \ndaspanel.env\n file, \nvisit the link below to see the notification email containing the password \nthat was automatically generated for your installation.\n\n\n    \nmail.svc.daspanel.site\n\n\n\n\n\n\nCreate database\n\n\nLet's say we want to create a database for Wordpress. Being in the Adminer main screen:\n\n\n\n\nOn the next page\n\n\n\n\n\n\nEnter the database name\n\n\nSelect collation type, the recommended one is \nutf8_general_ci\n\n\nClick the Save button to create the database\n\n\n\n\nCreate database user\n\n\nOn the page that displays database details\n\n\n\n\n\n\nPrivileges\n: Click this link\n\n\n\n\nOn the next page you can associate existing users with the database or create a \nnew user and associate it with the database.\n\n\n\n\n\n\nCreate user\n: Click this link to add new database user\n\n\n\n\nOn the next page we will add our new user:\n\n\n\n\n\n\nServer\n: Put % here.\n\n\nUsername\n: Choose the login username\n\n\nPassword\n: Choose a good password and put here\n\n\nAll privileges\n: Mark this oiption\n\n\nGrant option\n: Mark it to allow the user add anothers users\n\n\nClick the save button to create the new user\n\n\n\n\n\n\nSecurity\n\n\n\n\nThe Daspanel MySQL container can only be accessed by the other docker containers \nthat are on your internal network created by \ndocker-compose\n, so it is not \nso dangerous to use \n%\n in the host field.\n\n\nTo simplify the example we created a user with all the powers in relation to the database \nto which he was associated, of course you can opt in a more rigid control of the granted permissions.", 
             "title": "Database Manager"
         }, 
         {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
+            "location": "/help/services/adminer/#database-manager", 
+            "text": "One of the services offered by Daspanel is the database manager. For this service \nthe chosen tool is the  Adminer .\nWe chose it because in addition to MySql it works with a number of other types of databases.   Daspanel comes with a container running a MySql database server, more \nspecifically the  MariaDB 10 .\nIt can be used for the local development of sites and also in the public hosting of them.", 
+            "title": "Database manager"
         }, 
         {
-            "location": "/help/wip/", 
-            "text": "Work In Progress\n\n\nNone yet. Why not be the first to contribute to it ? See \n\nContributing\n page for details.", 
+            "location": "/help/services/adminer/#accessing-it", 
+            "text": "In the control panel click the services menu   On the next screen where all avaiable services are listed.    Click this buttom to open the database manager service.    You can directly access the database manager by opening the url  adminer.svc.daspanel.site \nin your browser.   A new window will open in your browser to enter the login data on the database server. \nIn the example below we will show you how to log in to the Daspanel MySql server, \nfor other servers that you want to use, just use the appropriate credentials.    System : Select \"MySQL\"  Server : Enter \"daspanel-mysql\" as the server address. If you are going to use an external server, please enter its valid address here.  Username : Enter \"root\"  Password : Inform the admin password.  Click the login button.    Admin password  If you have not set the password manually in the  daspanel.env  file, \nvisit the link below to see the notification email containing the password \nthat was automatically generated for your installation. \n     mail.svc.daspanel.site", 
+            "title": "Accessing it"
+        }, 
+        {
+            "location": "/help/services/adminer/#create-database", 
+            "text": "Let's say we want to create a database for Wordpress. Being in the Adminer main screen:   On the next page    Enter the database name  Select collation type, the recommended one is  utf8_general_ci  Click the Save button to create the database", 
+            "title": "Create database"
+        }, 
+        {
+            "location": "/help/services/adminer/#create-database-user", 
+            "text": "On the page that displays database details    Privileges : Click this link   On the next page you can associate existing users with the database or create a \nnew user and associate it with the database.    Create user : Click this link to add new database user   On the next page we will add our new user:    Server : Put % here.  Username : Choose the login username  Password : Choose a good password and put here  All privileges : Mark this oiption  Grant option : Mark it to allow the user add anothers users  Click the save button to create the new user    Security   The Daspanel MySQL container can only be accessed by the other docker containers \nthat are on your internal network created by  docker-compose , so it is not \nso dangerous to use  %  in the host field.  To simplify the example we created a user with all the powers in relation to the database \nto which he was associated, of course you can opt in a more rigid control of the granted permissions.", 
+            "title": "Create database user"
+        }, 
+        {
+            "location": "/help/services/filemanager/", 
+            "text": "File Manager\n\n\nEvery hosting control panel needs a way to manage their files and minimally do some \nfile operations like upload, download, delete, etc. We choose not to use FTP but use a \nmore modern solution that is a de facto industry standard. The solution we chose \nwas to use the S3 protocol that was created by Amazon and became a standard. \nIt is secure, stable, standardized and with numerous tools available to access it.\n\n\nFor this service the chosen tool is the \nMinio\n.\n\n\nAccessing it\n\n\nIn the control panel click the services menu\n\n\n\n\nOn the next screen where all avaiable services are listed.\n\n\n\n\n\n\nClick this buttom to open the file manager service.\n\n\n\n\n\n\nYou can directly access the file manager by opening the url \n\ns3.svc.daspanel.site\n\nin your browser.\n\n\n\n\nA new window will open in your browser to enter the login data on the file manager. \n\n\n\n\n\n\nAccess Key\n: First 20 characters of the UUID of your Daspanel\n\n\nSecrect key\n: Is the same password of the Daspanel admin.\n\n\nClick the login button.\n\n\n\n\n\n\nLogin credentials\n\n\nYou can easily obtain login credentials in the *** S3 CONFIG *** section of \nthe Daspanel startup notification message using the link below:\n\n\n    \nmail.svc.daspanel.site\n\n\n\n\n\n\nWhere are the files of a website?\n\n\nEach site you create has a unique universal ID, as well as each version of it. \nFor each site there is at least one version. And each site has its active version, \nthe version that will be displayed by default when accessing it.\n\n\nTo find out where the active files of the site are, just look at the screen below \nthe field \nActive Directory\n:\n\n\n\n\nAfter you have logged into the file manager go to the location of the site files \nand make the modifications you want.\n\n\n\n\nWhere:\n\n\n\n\nIs the UUID of the bucket holding all files of your Daspanel installation\n\n\nIs the UUID of the site\n\n\nIs the version you are editing\n\n\n\n\nAnd every arrow points to context menus avaiable to do file manager operations.", 
             "title": "File Manager"
         }, 
         {
-            "location": "/help/wip/#work-in-progress", 
-            "text": "None yet. Why not be the first to contribute to it ? See  Contributing  page for details.", 
-            "title": "Work In Progress"
+            "location": "/help/services/filemanager/#file-manager", 
+            "text": "Every hosting control panel needs a way to manage their files and minimally do some \nfile operations like upload, download, delete, etc. We choose not to use FTP but use a \nmore modern solution that is a de facto industry standard. The solution we chose \nwas to use the S3 protocol that was created by Amazon and became a standard. \nIt is secure, stable, standardized and with numerous tools available to access it.  For this service the chosen tool is the  Minio .", 
+            "title": "File Manager"
+        }, 
+        {
+            "location": "/help/services/filemanager/#accessing-it", 
+            "text": "In the control panel click the services menu   On the next screen where all avaiable services are listed.    Click this buttom to open the file manager service.    You can directly access the file manager by opening the url  s3.svc.daspanel.site \nin your browser.   A new window will open in your browser to enter the login data on the file manager.     Access Key : First 20 characters of the UUID of your Daspanel  Secrect key : Is the same password of the Daspanel admin.  Click the login button.    Login credentials  You can easily obtain login credentials in the *** S3 CONFIG *** section of \nthe Daspanel startup notification message using the link below: \n     mail.svc.daspanel.site", 
+            "title": "Accessing it"
+        }, 
+        {
+            "location": "/help/services/filemanager/#where-are-the-files-of-a-website", 
+            "text": "Each site you create has a unique universal ID, as well as each version of it. \nFor each site there is at least one version. And each site has its active version, \nthe version that will be displayed by default when accessing it.  To find out where the active files of the site are, just look at the screen below \nthe field  Active Directory :   After you have logged into the file manager go to the location of the site files \nand make the modifications you want.   Where:   Is the UUID of the bucket holding all files of your Daspanel installation  Is the UUID of the site  Is the version you are editing   And every arrow points to context menus avaiable to do file manager operations.", 
+            "title": "Where are the files of a website?"
+        }, 
+        {
+            "location": "/howto/wp/", 
+            "text": "Site using Wordpress\n\n\nOverview\n\n\nWordpress is the most used tool in the world for creating websites and blogs. \n\n\nIn this tutorial you will learn how to create a Wordpress site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nDescription\n: Write an description for your new site\n\n\nType\n: Choose 'Wordpress' as Type\n\n\nEngine\n: And 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall Wordpress\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nURL\n: To do the installation place this link \n\nhttps://wordpress.org/latest.zip\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the Wordpress is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nWordpress releases\n\n\nAt the time this document was written the last available version was at 4.7.3. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce Wordpress is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\nNow just complete the Wordpress setup in the new window that appears in your browser.\n\n\nCreate Wordpress database\n\n\nBefore completing the Wordpress setup you need a MySQL database. Click the link \nbelow to find out how to use the Daspanel database management service:\n\n\nDatabase manager usage\n\n\nFinalize Wordpress setup\n\n\nIf you created a database called wordpress, with the user equal to \nwpuser\n and the \npassword as \nSomeGoodPassword\n setup your Wordpress site database settings like this:\n\n\n\n\n\n\nDatabase Name\n: The name of the database you created\n\n\nUsername\n: The database user name you created\n\n\nPassword\n: The password of the created database user\n\n\nDatabase Host\n: Always equal \ndaspanel-mysql\n if you are usind Daspanel MySQL container server\n\n\nClick this button to continue Wordpress install\n\n\n\n\nNext Steps\n\n\n\n\nChoose a friendly URL for the new site\n\n\nMake custom changes to site files\n\n\n\n\n\n  \nDocs Home", 
+            "title": "Wordpress"
+        }, 
+        {
+            "location": "/howto/wp/#site-using-wordpress", 
+            "text": "", 
+            "title": "Site using Wordpress"
+        }, 
+        {
+            "location": "/howto/wp/#overview", 
+            "text": "Wordpress is the most used tool in the world for creating websites and blogs.   In this tutorial you will learn how to create a Wordpress site in Daspanel.", 
+            "title": "Overview"
+        }, 
+        {
+            "location": "/howto/wp/#quick-start", 
+            "text": "", 
+            "title": "Quick Start"
+        }, 
+        {
+            "location": "/howto/wp/#login", 
+            "text": "Open the admin in your browser  http://admin.daspanel.site   The admin user and your password are the ones you choose when creating your \nproject as instructed  here .", 
+            "title": "Login"
+        }, 
+        {
+            "location": "/howto/wp/#create-new-site", 
+            "text": "Go to the  Sites module    Add new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:     Description : Write an description for your new site  Type : Choose 'Wordpress' as Type  Engine : And 'PHP 7.0' as Engine  Click on the button 'CREATE SITE'", 
+            "title": "Create new site"
+        }, 
+        {
+            "location": "/howto/wp/#install-wordpress", 
+            "text": "After the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.    URL : To do the installation place this link  https://wordpress.org/latest.zip  \nin the URL field.  Click the \"UPLOAD CONTENT\" button.   Because the site has been created now and the ZIP file with the Wordpress is \npublicly accessible, you only have to enter the URL where to get the file.   Wordpress releases  At the time this document was written the last available version was at 4.7.3. \nYou can check the current version on the  downloads page .", 
+            "title": "Install Wordpress"
+        }, 
+        {
+            "location": "/howto/wp/#view-the-new-site", 
+            "text": "Once Wordpress is installed you will see a page like this:    Click the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.   Now just complete the Wordpress setup in the new window that appears in your browser.", 
+            "title": "View the new site"
+        }, 
+        {
+            "location": "/howto/wp/#create-wordpress-database", 
+            "text": "Before completing the Wordpress setup you need a MySQL database. Click the link \nbelow to find out how to use the Daspanel database management service:  Database manager usage", 
+            "title": "Create Wordpress database"
+        }, 
+        {
+            "location": "/howto/wp/#finalize-wordpress-setup", 
+            "text": "If you created a database called wordpress, with the user equal to  wpuser  and the \npassword as  SomeGoodPassword  setup your Wordpress site database settings like this:    Database Name : The name of the database you created  Username : The database user name you created  Password : The password of the created database user  Database Host : Always equal  daspanel-mysql  if you are usind Daspanel MySQL container server  Click this button to continue Wordpress install", 
+            "title": "Finalize Wordpress setup"
+        }, 
+        {
+            "location": "/howto/wp/#next-steps", 
+            "text": "Choose a friendly URL for the new site  Make custom changes to site files   \n   Docs Home", 
+            "title": "Next Steps"
         }, 
         {
             "location": "/howto/htmljs/", 
-            "text": "Site using GRAV\n\n\nOverview\n\n\nStatic websites made only with HTML and Javascript are a good option to have a \npresence on the internet. They are fast, safe and easy to maintain. And with the \nmodern features of HTML, CSS and the many options available of javascript libraries \nand frameworks can be as rich of resources as the sites made using PHP, Rails, etc.\n\n\nIn this tutorial you will learn how to create an static site in Daspanel and \ndownload an initial template form Github.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \n \nicone in the upper right of the Sites panel to see the page with the options for \nthe new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Generic site' as Type\n\n\nAnd 'Static' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall initial content\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file. For this howto we will use a website template that is in Github.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://github.com/BlackrockDigital/startbootstrap-creative/archive/gh-pages.zip\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the content is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nTemplate used\n\n\nThe content of the site was created using one of the cool themes of \n\nStart Bootstrap\n. See the full list of their \nthemes by clicking \nhere\n. \nMost of them can be used for free.\n\n\n\n\nView the new site\n\n\nOnce the content of the new site has been installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\n\n\nNow just customize the site for your needs.\n\n\nNext Steps\n\n\n\n\nChoose a friendly URL for the new site\n\n\n\n\n\n  \nDocs Home", 
+            "text": "Site using GRAV\n\n\nOverview\n\n\nStatic websites made only with HTML and Javascript are a good option to have a \npresence on the internet. They are fast, safe and easy to maintain. And with the \nmodern features of HTML, CSS and the many options available of javascript libraries \nand frameworks can be as rich of resources as the sites made using PHP, Rails, etc.\n\n\nIn this tutorial you will learn how to create an static site in Daspanel and \ndownload an initial template form Github.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \n \nicone in the upper right of the Sites panel to see the page with the options for \nthe new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Generic site' as Type\n\n\nAnd 'Static' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall initial content\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file. For this howto we will use a website template that is in Github.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://github.com/BlackrockDigital/startbootstrap-creative/archive/gh-pages.zip\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the content is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nTemplate used\n\n\nThe content of the site was created using one of the cool themes of \n\nStart Bootstrap\n. See the full list of their \nthemes by clicking \nhere\n. \nMost of them can be used for free.\n\n\n\n\nView the new site\n\n\nOnce the content of the new site has been installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\n\n\nNow just customize the site for your needs.\n\n\nNext Steps\n\n\n\n\nChoose a friendly URL for the new site\n\n\nMake custom changes to site files\n\n\n\n\n\n  \nDocs Home", 
             "title": "Static HTML/JS"
         }, 
         {
@@ -422,12 +402,12 @@
         }, 
         {
             "location": "/howto/htmljs/#next-steps", 
-            "text": "Choose a friendly URL for the new site   \n   Docs Home", 
+            "text": "Choose a friendly URL for the new site  Make custom changes to site files   \n   Docs Home", 
             "title": "Next Steps"
         }, 
         {
             "location": "/howto/grav/", 
-            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall GRAV\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://getgrav.org/download/core/grav-admin/1.1.17\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nGRAV releases\n\n\nAt the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce GRAV is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\nNow just complete the GRAV setup in the new window that appears in your browser.\n\n\n\n\nNext Steps\n\n\n\n\nChoose a friendly URL for the new site\n\n\n\n\n\n  \nDocs Home", 
+            "text": "Site using GRAV\n\n\nOverview\n\n\nAs stated on your home page \"Grav is a modern open source flat-file CMS\". It is \nwidely used for website development and does not depend on any kind of database \nserver.\n\n\nIn this tutorial you will learn how to create a Grav site in Daspanel.\n\n\nQuick Start\n\n\nLogin\n\n\nOpen the admin in your browser \nhttp://admin.daspanel.site\n\n\n\n\nThe admin user and your password are the ones you choose when creating your \nproject as instructed \nhere\n.\n\n\nCreate new site\n\n\nGo to the \nSites module\n\n\n\n\n\n\nAdd new site clicking the \"+\" icone in the upper right of the Sites panel to see the\npage with the options for the new site:\n\n\n\n\n\n\n\n\nWrite an description for your new site\n\n\nChoose 'Grav' as Type\n\n\nAnd 'PHP 7.0' as Engine\n\n\nClick on the button 'CREATE SITE'\n\n\n\n\nInstall GRAV\n\n\nAfter the site has been created, a screen will be displayed to upload any remote \ncontent that is in a ZIP file.\n\n\n\n\n\n\nTo do the installation place this link \n\nhttps://getgrav.org/download/core/grav-admin/1.1.17\n \nin the URL field.\n\n\nClick the \"UPLOAD CONTENT\" button.\n\n\n\n\nBecause the site has been created now and the ZIP file with the GRAV is \npublicly accessible, you only have to enter the URL where to get the file.\n\n\n\n\nGRAV releases\n\n\nAt the time this document was written the last available version was at 1.1.17. \nYou can check the current version on the \n\ndownloads page\n.\n\n\n\n\nView the new site\n\n\nOnce GRAV is installed you will see a page like this:\n\n\n\n\n\n\nClick the \"PREVIEW\" button and a new window will open in your browser \ndisplaying the contents of the active version of the site.\n\n\n\n\nNow just complete the GRAV setup in the new window that appears in your browser.\n\n\n\n\nNext Steps\n\n\n\n\nChoose a friendly URL for the new site\n\n\nMake custom changes to site files\n\n\n\n\n\n  \nDocs Home", 
             "title": "Grav"
         }, 
         {
@@ -467,7 +447,7 @@
         }, 
         {
             "location": "/howto/grav/#next-steps", 
-            "text": "Choose a friendly URL for the new site   \n   Docs Home", 
+            "text": "Choose a friendly URL for the new site  Make custom changes to site files   \n   Docs Home", 
             "title": "Next Steps"
         }, 
         {

@@ -9,7 +9,7 @@
         <meta name="description" content="Daspanel documentation.">
       
       
-        <link rel="canonical" href="https://daspanel.github.io/daspanel/help/sites/edit/">
+        <link rel="canonical" href="https://daspanel.github.io/daspanel/help/services/filemanager/">
       
       
         <meta name="author" content="Abner G Jacobsen">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Edit - Daspanel</title>
+        <title>File Manager - Daspanel</title>
       
     
     
@@ -87,11 +87,11 @@
                 </span>
               
                 <span class="md-header-nav__parent">
-                  Sites
+                  Services
                 </span>
               
             
-            Edit
+            File Manager
           
         </span>
       </div>
@@ -285,12 +285,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-1" type="checkbox" id="nav-3-1">
     
     <label class="md-nav__link" for="nav-3-1">
       Sites
@@ -306,20 +304,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-    <a href="./" title="Edit" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../sites/edit/" title="Edit" class="md-nav__link">
       Edit
     </a>
-    
   </li>
 
         
@@ -332,10 +321,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3-2" type="checkbox" id="nav-3-2" checked>
     
     <label class="md-nav__link" for="nav-3-2">
       Services
@@ -353,7 +344,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../services/adminer/" title="Database Manager" class="md-nav__link">
+    <a href="../adminer/" title="Database Manager" class="md-nav__link">
       Database Manager
     </a>
   </li>
@@ -363,11 +354,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../services/filemanager/" title="File Manager" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        File Manager
+      </label>
+    
+    <a href="./" title="File Manager" class="md-nav__link md-nav__link--active">
       File Manager
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-it" title="Accessing it" class="md-nav__link">
+    Accessing it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-are-the-files-of-a-website" title="Where are the files of a website?" class="md-nav__link">
+    Where are the files of a website?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -542,6 +574,25 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-it" title="Accessing it" class="md-nav__link">
+    Accessing it
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#where-are-the-files-of-a-website" title="Where are the files of a website?" class="md-nav__link">
+    Where are the files of a website?
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -551,52 +602,62 @@
           <div class="md-content">
             <article class="md-content__inner md-typeset">
                
-                 <a href="https://github.com/daspanel/daspanel/edit/master/docs/help/sites/edit.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
+                 <a href="https://github.com/daspanel/daspanel/edit/master/docs/help/services/filemanager.md" title="Edit this page" class="md-icon md-content__edit">edit</a>
                
               
                 
-                <h1 id="site-edit">Site edit<a class="headerlink" href="#site-edit" title="Permanent link">&para;</a></h1>
-<p>Go to the <a href="http://admin.daspanel.site/sites/">Sites module</a></p>
-<p><a href="../img/sites-list-edit.png"><img alt="Daspanel sites list" src="../img/sites-list-edit.png" /></a></p>
+                <h1 id="file-manager">File Manager<a class="headerlink" href="#file-manager" title="Permanent link">&para;</a></h1>
+<p>Every hosting control panel needs a way to manage their files and minimally do some 
+file operations like upload, download, delete, etc. We choose not to use FTP but use a 
+more modern solution that is a de facto industry standard. The solution we chose 
+was to use the S3 protocol that was created by Amazon and became a standard. 
+It is secure, stable, standardized and with numerous tools available to access it.</p>
+<p>For this service the chosen tool is the <b><a href="https://minio.io/" target="_blank">Minio</a></b>.</p>
+<h2 id="accessing-it">Accessing it<a class="headerlink" href="#accessing-it" title="Permanent link">&para;</a></h2>
+<p>In the control panel click the services menu</p>
+<p><a href="../../../img/services-menu.png"><img alt="Daspanel services menu" src="../../../img/services-menu.png" /></a></p>
+<p>On the next screen where all avaiable services are listed.</p>
+<p><a href="../img/open-file-manager.png"><img alt="Daspanel services filemanager" src="../img/open-file-manager.png" /></a></p>
 <ol>
-<li>Click the "EDIT" button of the site you want edit.</li>
+<li>Click this buttom to open the file manager service.</li>
 </ol>
-<p>You'll see a new page to edit the site:</p>
-<p><a href="../img/site-edit.png"><img alt="Daspanel sites edit" src="../img/site-edit.png" /></a></p>
-<ol>
-<li><strong>Description</strong>: Write an description for the site</li>
-<li>
-<p><strong>Url Prefix</strong>: Any name that will be used to form the site access URL, e.x: test1</p>
-<div class="admonition note">
-<p>For each site created in Daspanel is automatically assigned a unique URL that 
-allows the display of the content of it in your browser. Here is an example:</p>
-<p><code>http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site</code></p>
-<ul>
-<li>
-<p>The <em>cizszr02x000m70nzm02dy4f3</em> segment of the URL matches the unique ID automatically 
-assigned to the site when it was created.</p>
-</li>
-<li>
-<p>And <em>daspanel.site</em> is the name of the host where the control panel is running. 
-This name is usually set using the DASPANEL_HOST variable that you configured in the <code>daspanel.env</code> file.</p>
-</li>
-</ul>
-<p>If you change the Url Prefix field to <em>test1</em>, for example, the site can be 
-accessed both by the primary as well as by using the custom address as follows:</p>
-<p><code>http://cizszr02x000m70nzm02dy4f3.sites.daspanel.site</code> </p>
-<p><code>http://test1.sites.daspanel.site</code></p>
-<p><em>Only letters and numbers are allowed in this field.</em></p>
-<p><em>The chosen name must be unique, it cannot be in use by another site.</em></p>
+<div class="admonition tip">
+<p>You can directly access the file manager by opening the url 
+<b><a href="http://s3.svc.daspanel.site" target="_blank">s3.svc.daspanel.site</a></b>
+in your browser.</p>
 </div>
-</li>
-<li>
-<p>Save the changes by clicking the <strong>UPDATE SITE</strong> button.</p>
-</li>
-<li>Or click the <strong>left arrow</strong> <img alt="Alt" src="../img/back-arrow.png" title="Back" /> at the top of 
-the screen to return without saving anything.</li>
+<p>A new window will open in your browser to enter the login data on the file manager. </p>
+<p><a href="../img/filemanager-login.png"><img alt="Daspanel filemanager login" src="../img/filemanager-login.png" /></a></p>
+<ol>
+<li><strong>Access Key</strong>: First 20 characters of the UUID of your Daspanel</li>
+<li><strong>Secrect key</strong>: Is the same password of the Daspanel admin.</li>
+<li>Click the login button.</li>
 </ol>
-<p>When you change a site, Daspanel automatically notifies the HTTP server and 
-Load Balancer containers to update with the new information.</p>
+<div class="admonition tip">
+<p class="admonition-title">Login credentials</p>
+<p>You can easily obtain login credentials in the *** S3 CONFIG *** section of 
+the Daspanel startup notification message using the link below:
+<p align="center">
+    <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
+</p></p>
+</div>
+<h2 id="where-are-the-files-of-a-website">Where are the files of a website?<a class="headerlink" href="#where-are-the-files-of-a-website" title="Permanent link">&para;</a></h2>
+<p>Each site you create has a unique universal ID, as well as each version of it. 
+For each site there is at least one version. And each site has its active version, 
+the version that will be displayed by default when accessing it.</p>
+<p>To find out where the active files of the site are, just look at the screen below 
+the field <strong>Active Directory</strong>:</p>
+<p><a href="../img/filemanager-sitedir.png"><img alt="Daspanel filemanager sitedir" src="../img/filemanager-sitedir.png" /></a></p>
+<p>After you have logged into the file manager go to the location of the site files 
+and make the modifications you want.</p>
+<p><a href="../img/filemanager-site.png"><img alt="Daspanel filemanager site" src="../img/filemanager-sitefiles.png" /></a></p>
+<p>Where:</p>
+<ol>
+<li>Is the UUID of the bucket holding all files of your Daspanel installation</li>
+<li>Is the UUID of the site</li>
+<li>Is the version you are editing</li>
+</ol>
+<p>And every arrow points to context menus avaiable to do file manager operations.</p>
               
               
             </article>
@@ -610,7 +671,7 @@ Load Balancer containers to update with the new information.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../../install/mac/" title="Mac" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../adminer/" title="Database Manager" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -619,19 +680,19 @@ Load Balancer containers to update with the new information.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Mac
+                Database Manager
               </span>
             </div>
           </a>
         
         
-          <a href="../../services/adminer/" title="Database Manager" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../../howto/wp/" title="Wordpress" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Database Manager
+                Wordpress
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
