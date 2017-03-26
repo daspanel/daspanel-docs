@@ -14,6 +14,31 @@ More information on how to install them can be found on these pages:
 
 ## Quick Start
 
+### Get installation files
+
+Go to <a href="http://daspanel.com" target="_blank">Daspanel site</a> Click in the 
+*INSTALL* link and fill the result form like this:
+
+[![Daspanel form](img/daspanelcom-form.png)](img/daspanelcom-form.png)
+
+After downloading the file unzip it and go to the created directory. If you chose 
+*customer1* as the project name the commands would look like:
+
+``` shell
+unzip daspanel-customer1.zip
+cd customer1
+```
+
+### Start Daspanel
+
+Within the directory where the `daspanel.env` and `docker-compose.yml` files are, run the following command:
+
+``` shell
+docker-compose up -d
+```
+
+## Manual Installation
+
 ### Create directory project
 
 A Daspanel project can contain multiple sites that usually belong to a 
