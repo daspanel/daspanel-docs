@@ -3,13 +3,16 @@
 
 ## Overview
 
-You can use `Daspanel` with any modern Linux distribution. The only 
+!!! warning "Work in progress"
+    Documentation not yet ready. Just a clone of the Linux docs
+
+You can use `Daspanel` with any Mac version supported by Docker. The only 
 requirements are that you have installed `docker` and `docker-compose` on it. 
 More information on how to install them can be found on these pages: 
-[docker](https://docs.docker.com/engine/installation/linux/) and 
-[docker-compose](https://docs.docker.com/compose/)
+[docker](https://docs.docker.com/docker-for-mac/install/) and 
+[docker-compose](https://docs.docker.com/compose/install/)
 
-## Quick Start
+## Manual Installation
 
 ### Create directory project
 
