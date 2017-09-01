@@ -104,8 +104,10 @@ pages:
 #        - Redirects: 'help/wip.md'
 #        - Content Upload: 'help/wip.md'
     - Services:
-        - Database Manager: 'help/services/adminer.md'
         - File Manager: 'help/services/filemanager.md'
+        - Database Manager: 'help/services/adminer.md'
+        - S3 Storage: 'help/services/s3storage.md'
+        - Mail Catcher: 'help/services/mailcatcher.md'
 - How To:
     - Sites:
         - 'Wordpress': 'howto/wp/index.md'

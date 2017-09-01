@@ -13,7 +13,7 @@ More information on how to install them can be found on these pages:
 
 ### Get installation files
 
-Go to <a href="http://daspanel.com" target="_blank">Daspanel site</a> Click in the 
+Go to <a href="https://daspanel.com" target="_blank">Daspanel site</a> Click in the 
 *INSTALL* link and fill the result form like this:
 
 [![Daspanel form](img/daspanelcom-form.png)](img/daspanelcom-form.png)
@@ -33,6 +33,24 @@ Within the directory where the `daspanel.env` and `docker-compose.yml` files are
 ``` shell
 docker-compose up -d
 ```
+
+After the above command finishes check if the Daspanel is working by clicking 
+on this link: 
+
+[https://admin.daspanel.site](https://admin.daspanel.site)
+
+You will have to see something like this:
+
+[![Daspanel login](img/daspanel-login.png)](img/daspanel-login.png)
+
+!!! warning ""
+    If you modified the `DASPANEL_SYS_HOST` to an address other than `daspanel.site`, 
+    `mydomain.com` for example, the control panel URL will be 
+    https://admin.mydomain.com
+
+If you did not configured your own password in the `daspanel.env` file, see the 
+[Login credentials](/help/install/linux/#login-credentials) section on how to find out the password 
+to be used to login to the control panel.
 
 ## Manual installation
 
@@ -120,7 +138,7 @@ docker-compose up -d
 After the above command finishes check if the Daspanel is working by clicking 
 on this link: 
 
-[http://admin.daspanel.site](http://admin.daspanel.site)
+[https://admin.daspanel.site](https://admin.daspanel.site)
 
 You will have to see something like this:
 
@@ -129,7 +147,7 @@ You will have to see something like this:
 !!! warning ""
     If you modified the `DASPANEL_SYS_HOST` to an address other than `daspanel.site`, 
     `mydomain.com` for example, the control panel URL will be 
-    http://admin.mydomain.com
+    https://admin.mydomain.com
 
 If you did not configured your own password in the `daspanel.env` file, see the 
 [Login credentials](/help/install/linux/#login-credentials) section on how to find out the password 
@@ -143,16 +161,26 @@ sites that use external SMTP servers.
 
 To view these emails as well as system notifications, go to this URL:
 
-[http://mail.svc.daspanel.site](http://mail.svc.daspanel.site)
+[https://mail.svc.daspanel.site](https://mail.svc.daspanel.site)
 
 !!! warning ""
     If you modified the `DASPANEL_SYS_HOST` to an address other than `daspanel.site`, 
     `mydomain.com` for example, the URL will be 
-    http://mail.svc.mydomain.com
+    https://mail.svc.mydomain.com
 
-Use *admin@daspanel.site* as user login unless you have changed the 
-*DASPANEL_SYS_ADMIN* and/or *DASPANEL_SYS_HOST* variables in the `daspanel.env` 
-file. The password will always be the same as the *DASPANEL_SYS_UUID* value.
+A new window will open in your browser to enter the login data on the mail catcher. 
+
+[![Daspanel mailatcher login](img/mailcatcher-login.png)](img/mailcatcher-login.png)
+
+1. **User Name**: Is the admin email
+2. **Password**: Is the UUID of your Daspanel.
+3. Click the login in button.
+
+!!! tip "Login credentials"
+    * If you have not configured the *DASPANEL_SYS_ADMIN* variable in the 
+    daspanel.env file the admin email is admin@daspanel.site.
+    * Or, if you have set the *DASPANEL_SYS_HOSTNAME* but not the *DASPANEL_SYS_ADMIN* it will be '*admin*' + '@' + the value of *DASPANEL_SYS_HOSTNAME*.
+    * The UUID is the value of variable *DASPANEL_SYS_UUID* in the same file.
 
 After logging in, a screen like the one below will be displayed:
 
@@ -163,6 +191,10 @@ DASPANEL notification will be here. **IMPORTANT:** these messages are stored in
 memory, when the containers stop they disappear.
 
 ### Login credentials
+
+Before you get the login credentials you must be logged in to the mail catcher 
+service. Do this by clicking 
+[here](/help/install/linux/#emails-notifications) if you have not already done so.
 
 Click on the most recent message with the subject `DASPANEL instance c...` and in it 
 you will find all the necessary information to access the control panel.
