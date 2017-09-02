@@ -36,6 +36,21 @@ Follow the appropriate instructions for your computer in one of the links below:
 * [Windows](help/install/windows.md)
 * [Mac](help/install/mac.md)
 
+## Architecture
+
+Daspanel can be defined as a set of Docker images (CONTAINERS) that work 
+together through an orchestrator (docker-compose for now) and that have their 
+settings defined through a REST API.
+
+You can view the architecture in the image below:
+
+[![Daspanel architecture](img/daspanel-architecture.svg)](img/daspanel-architecture.svg)
+
+The ultimate goal of it is to host one or more client sites, just like Cpanel 
+or Plesk do.
+
+To better understand his architecture see the content of [this page](howitworks.md).
+
 ## Why Daspanel ?
 
 In a world dominated by cloud computing and the use of Docker containers, 

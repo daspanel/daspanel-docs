@@ -1,5 +1,5 @@
 
-# Site using GRAV
+# Site using only static HTML/JS
 
 ## Overview
 

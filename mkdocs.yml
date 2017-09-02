@@ -84,6 +84,7 @@ pages:
 #   - '____ Sample Datasets': 'examples/datasets/README.md'
 
 - About: 'index.md'
+- How It Works: 'howitworks.md'
 - Installation guide:
     - 'Linux': 'help/install/linux.md'
     - 'Windows': 'help/install/windows.md'
