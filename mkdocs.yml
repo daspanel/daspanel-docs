@@ -97,7 +97,7 @@ pages:
 #        - Components: 'help/wip.md'
     - Sites:
 #        - Overview: 'help/wip.md'
-#        - Add: 'help/wip.md'
+        - Add Site: 'help/sites/add.md'
         - Edit: 'help/sites/edit.md'
 #        - Delete: 'help/wip.md'
 #        - Control: 'help/wip.md'
