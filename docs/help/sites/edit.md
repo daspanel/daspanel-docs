@@ -1,4 +1,4 @@
-# Site edit
+# Edit Site
 
 Go to the [Sites module](http://admin.daspanel.site/sites/)
 

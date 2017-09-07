@@ -99,9 +99,16 @@ pages:
 #        - Overview: 'help/wip.md'
         - Add: 'help/sites/add.md'
         - Edit: 'help/sites/edit.md'
-        - Delete: 'help/sites/delete.md'
+        - Delete Site: 'help/sites/delete.md'
+        - Versions: 
+            - Overview: 'help/sites/versions.md'
+            - Clone Version: 'help/sites/versions/clone.md'
+            - Add Version: 'help/sites/versions/add.md'
+            - Edit Version: 'help/sites/versions/edit.md'
+            - Delete Version: 'help/sites/versions/delete.md'
+            - Preview Version: 'help/sites/versions/preview.md'
+            - Set Site Active Version: 'help/wip.md'
 #        - Control: 'help/wip.md'
-#        - Versions: 'help/wip.md'
 #        - Redirects: 'help/wip.md'
 #        - Content Upload: 'help/wip.md'
     - Services:
