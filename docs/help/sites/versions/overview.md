@@ -55,7 +55,7 @@ that can be run in the version.
 
 * [Clone version](/help/sites/versions/clone)
 * [Add version](/help/sites/versions/add)
-* [Set Default version](/help/sites/versions/activate)
+* [Set Default version](/help/sites/versions/default)
 * [Edit version](/help/sites/versions/edit)
 * [Delete version](/help/sites/versions/delete)
 * [Preview version](/help/sites/versions/preview)

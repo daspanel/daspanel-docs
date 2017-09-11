@@ -25,8 +25,7 @@ Once the operation is successfully completed the list of versions is updated:
 
 Now with the new version that has been cloned you can:
 
-* [Set Active version](/help/sites/versions/activate)
-* [Edit version](/help/sites/versions/edit)
+* [Set Active version](/help/sites/versions/default)
 * [Delete version](/help/sites/versions/delete)
 * [Preview version](/help/sites/versions/preview)
 

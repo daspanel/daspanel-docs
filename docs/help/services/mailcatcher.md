@@ -49,6 +49,8 @@ On the next screen where all avaiable services are listed.
 
 A new window will open in your browser to enter the login data on the mail catcher. 
 
+## Mail catcher login
+
 [![Daspanel mailatcher login](img/mailcatcher-login.png)](img/mailcatcher-login.png)
 
 1. **User Name**: Is the admin email

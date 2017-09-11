@@ -53,7 +53,7 @@ Once the operation is successfully completed the list of versions is updated:
 
 Now with the new version that has been added you can:
 
-* [Set Active version](/help/sites/versions/activate)
+* [Set Active version](/help/sites/versions/default)
 * [Edit version](/help/sites/versions/edit)
 * [Delete version](/help/sites/versions/delete)
 * [Preview version](/help/sites/versions/preview)
