@@ -38,6 +38,8 @@ When you create a new site, Daspanel automatically notifies the Docker container
 responsible for the chosen engine and the load balancer so that they update 
 with the configurations of the created site.
 
+## Install Content
+
 Once the site is added, you can install a first content on it using the 
 following page that is displayed shortly afterwards - **this step is optional**:
 

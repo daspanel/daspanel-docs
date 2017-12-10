@@ -1,9 +1,8 @@
-
 # Project information
 site_name: 'Daspanel'
 site_description: 'Daspanel documentation.'
 site_author: 'Abner G Jacobsen'
-site_url: 'https://daspanel.github.io/daspanel'
+site_url: 'https://docs.daspanel.com'
 
 # Repository
 repo_name: 'GitHub'
@@ -16,7 +15,12 @@ copyright: 'Copyright (c) 2016-2017 Abner G Jacobsen'
 docs_dir: 'docs'
 site_dir: 'site_mkdocs'
 
-theme: 'material'
+# theme: 'material'
+theme:
+  name: material
+  feature:
+    tabs: true
+
 #theme_dir: docs/custom_theme
 #extra_css: [ custom_theme/extra.css ]
 
@@ -42,6 +46,8 @@ extra:
     github: 'daspanel'
 #    twitter: 'my-twitter-handle'
   social:
+    - type: globe
+      link: http://daspanel.com
     - type: 'github'
       link: 'https://github.com/daspanel'
 
@@ -83,8 +89,11 @@ pages:
 #   - '____ Juttle Doc Template': 'doc_templates/juttle_TEMPLATE.md'
 #   - '____ Sample Datasets': 'examples/datasets/README.md'
 
-- About: 'index.md'
+- Overview: 'index.md'
 - How It Works: 'howitworks.md'
+- Issues: 'issues.md'
+- Contributing: 'contributing.md'
+- Authors: 'authors.md'
 - Installation guide:
     - 'Linux': 'help/install/linux.md'
     - 'Windows': 'help/install/windows.md'
@@ -100,6 +109,8 @@ pages:
         - Add: 'help/sites/add.md'
         - Edit: 'help/sites/edit.md'
         - Delete Site: 'help/sites/delete.md'
+        - Toolbox:
+            - Overview: 'help/sites/toolbox/overview.md'
         - Versions:
             - Overview: 'help/sites/versions/overview.md'
             - Clone Version: 'help/sites/versions/clone.md'
@@ -132,9 +143,7 @@ pages:
 #    - 'Advanced': 'help/advanced.md'
 #    - 'Development': 'help/development.md'
 #    - 'How To': 'howto/index.md'
-- Issues: 'issues.md'
-- Contributing: 'contributing.md'
-- About:
-    - 'Authors': 'authors.md'
+#- About:
+#    - 'Authors': 'authors.md'
 #    - 'Changelog': 'changelog.md'
 

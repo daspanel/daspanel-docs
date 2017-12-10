@@ -18,7 +18,7 @@ of each one:
 
 | Image    | Function
 | :------- | :------
-| **PHP 5.6, PHP 7.0, PHP 7.1, Static HTML/JS** | Used to provide the hosting of each site created in Daspanel with the engine selected for them. In the future we think of offering other types of engines like Node, Rails, Python, etc. |
+| **PHP 5.6, PHP 7.0, PHP 7.1, Static HTML/JS** | Used to provide the hosting of each site created in Daspanel with the engine selected for them. In the future we think of offering other types of engines like Node, Rails, Python, etc. Some additional tools to help with site creation are installed: nodejs, gulp, bower, etc.|
 | **Proxy** | Entry point used when someone accesses a site hosted on Daspanel, it decides on which engine the site is hosted and forwards the request to it. In addition, it is responsible for obtaining the SSL security certificates for the sites. In the future it will also perform the load balancing service when Daspanel is ready for a clustered environment. |
 | **API** | REST API server. It is the Daspanel kernel, through it all the typical operations of a hosting control panel are made. |
 | **ControlPanel** | Web interface frontend to administer Daspanel using the API. |

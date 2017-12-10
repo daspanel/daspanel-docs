@@ -27,7 +27,7 @@ On the next screen where all avaiable services are listed.
 
 A new window will open in your browser to enter the login data on the file manager. 
 
-[![Daspanel filemanager login](img/filemanager-login.png)](img/filemanager-login.png)
+[![Daspanel filemanager login](img/s3filemanager-login.png)](img/s3filemanager-login.png)
 
 1. **Access Key**: First 20 characters of the UUID of your Daspanel
 2. **Secrect key**: Is the same password of the Daspanel admin.
@@ -54,7 +54,7 @@ the field **Active Directory**:
 After you have logged into the file manager go to the location of the site files 
 and make the modifications you want.
 
-[![Daspanel filemanager site](img/filemanager-sitefiles.png)](img/filemanager-site.png)
+[![Daspanel filemanager site](img/s3filemanager-sitefiles.png)](img/s3filemanager-sitefiles.png)
 
 Where:
 

@@ -1,12 +1,11 @@
 # File Manager
 
 Every hosting control panel needs a way to manage their files and minimally do some 
-file operations like upload, download, delete, etc. We choose not to use FTP but use a 
-more modern solution that is a de facto industry standard. The solution we chose 
-was to use the S3 protocol that was created by Amazon and became a standard. 
-It is secure, stable, standardized and with numerous tools available to access it.
+file operations like upload, download, delete, edit, etc. We choose not to use FTP but use a 
+more modern way of doing this. The solution we chose is a tool that can be used 
+through the browser.
 
-For this service the chosen tool is the <b><a href="https://minio.io/" target="_blank">Minio</a></b>.
+For this service the chosen tool is the <b><a href="https://github.com/servocoder/RichFilemanager" target="_blank">RichFilemanager</a></b>.
 
 ## Accessing it
 
@@ -22,23 +21,28 @@ On the next screen where all avaiable services are listed.
 
 !!! tip ""
     You can directly access the file manager by opening the url 
-    <b><a href="http://s3.svc.daspanel.site" target="_blank">s3.svc.daspanel.site</a></b>
+    <b><a href="http://fm.svc.daspanel.site" target="_blank">fm.svc.daspanel.site</a></b>
     in your browser.
 
-A new window will open in your browser to enter the login data on the file manager. 
+If this is the first time you access the file manager in the current session of 
+your browser, a screen like this will appear to log in:
 
-[![Daspanel filemanager login](img/filemanager-login.png)](img/filemanager-login.png)
+[![Daspanel filemanager login](img/mailcatcher-login.png)](img/mailcatcher-login.png)
 
-1. **Access Key**: First 20 characters of the UUID of your Daspanel
-2. **Secrect key**: Is the same password of the Daspanel admin.
-3. Click the login button.
+1. **User Name**: Is the file manager user.
+2. **Password**: Is the file manager user passord.
+
+3. Click the login in button.
 
 !!! tip "Login credentials"
-    You can easily obtain login credentials in the *** S3 CONFIG *** section of 
+    You can easily obtain login credentials in the *** File Manager *** section of 
     the Daspanel startup notification message using the link below:
     <p align="center">
         <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
     </p>
+
+After your browser has an authentication token with file manager access 
+permission, the initial page of the file manager will be displayed:
 
 ## Where are the files of a website?
 
@@ -54,13 +58,19 @@ the field **Active Directory**:
 After you have logged into the file manager go to the location of the site files 
 and make the modifications you want.
 
-[![Daspanel filemanager site](img/filemanager-sitefiles.png)](img/filemanager-site.png)
+So, if the **Active Directory** of your site is: 
+``` shell
+content/cjazrj324000064o30n24o9ev/v/cjazrj324000164o34o3b7wlu
+```
 
-Where:
 
-1. Is the UUID of the bucket holding all files of your Daspanel installation
-2. Is the UUID of the site
-3. Is the version you are editing
+Then you need to go in the file manager to this location:
+
+[![Daspanel filemanager site](img/filemanager-site.png)](img/filemanager-site.png)
+
+1. This is the directory where all the sites of your Daspanel instance are located.
+2. Is the UUID (directory) of the site
+3. Is the UUID (directory) of the version you are editing
 
 And every arrow points to context menus avaiable to do file manager operations.
 
