@@ -42,7 +42,7 @@ The site card will be changed to the version management area:
 
 On the next page you will see a list of all the existing versions for the site:
 
-[![Daspanel site versions list](img/site-versions-list.png)](img/site-versions-list.png)
+[![Daspanel site versions list](/img/site-versions-list.png)](/img/site-versions-list.png)
 
 At where:
 

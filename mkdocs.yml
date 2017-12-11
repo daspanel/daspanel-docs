@@ -109,6 +109,8 @@ pages:
         - Add: 'help/sites/add.md'
         - Edit: 'help/sites/edit.md'
         - Delete Site: 'help/sites/delete.md'
+        - Console: help/sites/console.md
+        - File Manager: help/sites/filemanager.md
         - Toolbox:
             - Overview: 'help/sites/toolbox/overview.md'
         - Versions:
@@ -119,12 +121,16 @@ pages:
             - Delete Version: 'help/sites/versions/delete.md'
             - Preview Version: 'help/sites/versions/preview.md'
             - Select Site Default Version: 'help/sites/versions/default.md'
+            - Console: help/sites/versions/console.md
+            - File Manager: help/sites/versions/filemanager.md
         - Domain Mapping:
             - Overview: 'help/sites/domain_mapping/overview.md'
             - Add: 'help/sites/domain_mapping/add.md'
             - Edit: 'help/sites/domain_mapping/edit.md'
             - Delete: 'help/sites/domain_mapping/delete.md'
             - Preview: 'help/sites/domain_mapping/preview.md'
+            - Console: help/sites/domain_mapping/console.md
+            - File Manager: help/sites/domain_mapping/filemanager.md
 #        - Control: 'help/wip.md'
 #        - Redirects: 'help/wip.md'
 #        - Content Upload: 'help/wip.md'
@@ -138,6 +144,7 @@ pages:
         - 'Wordpress': 'howto/wp/index.md'
         - 'Static HTML/JS': 'howto/htmljs/index.md'
         - 'Grav': 'howto/grav/index.md'
+        - 'Static Using VUE-CLI': 'howto/htmljs/vue-cli.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'

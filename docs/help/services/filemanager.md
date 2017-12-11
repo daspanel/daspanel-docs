@@ -24,6 +24,8 @@ On the next screen where all avaiable services are listed.
     <b><a href="http://fm.svc.daspanel.site" target="_blank">fm.svc.daspanel.site</a></b>
     in your browser.
 
+## Login
+
 If this is the first time you access the file manager in the current session of 
 your browser, a screen like this will appear to log in:
 
@@ -63,7 +65,6 @@ So, if the **Active Directory** of your site is:
 content/cjazrj324000064o30n24o9ev/v/cjazrj324000164o34o3b7wlu
 ```
 
-
 Then you need to go in the file manager to this location:
 
 [![Daspanel filemanager site](img/filemanager-site.png)](img/filemanager-site.png)
@@ -73,5 +74,51 @@ Then you need to go in the file manager to this location:
 3. Is the UUID (directory) of the version you are editing
 
 And every arrow points to context menus avaiable to do file manager operations.
+
+## Using the file manager
+
+The file manager is simple and intuitive to use, similar to many others you 
+should have used already.
+
+### Edit file
+
+Once you reach the directory where the site files are, click on a file and the 
+contents of the file will be displayed. Let's start with the index.php file:
+
+[![Daspanel filemanager file](img/filemanager-view-file.png)](img/filemanager-view-file.png)
+
+1. Click the "Edit File" button to edit the file
+
+This button only appears for the types of files that can be edited online
+
+### Upload files
+
+For uploading files:
+
+[![Daspanel filemanager upload](img/filemanager-upload.png)](img/filemanager-upload.png)
+
+1. Click the "Upload" button.
+
+[![Daspanel filemanager upload select](img/filemanager-upload-select.png)](img/filemanager-upload-select.png)
+
+1. Click here, or drag the files in this area.
+2. After choosing the files you want to upload, click the "Upload" button to 
+complete the operation.
+
+### Unzipping a ZIP file
+
+To ease the loading of a site with multiple files, simply compress the site on 
+your workstation and upload the ZIP file to Daspanel.
+
+After placing the file in Daspanel right click on the ZIP file:
+
+[![Daspanel filemanager extract](img/filemanager-extract.png)](img/filemanager-extract.png)
+
+1. Choose the extract option from the menu that appeared after right-clicking.
+
+### Other Functions
+
+By right-clicking on a file or directory a context menu will be displayed with 
+all the commands that apply to the selection.
 
 
