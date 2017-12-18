@@ -7,7 +7,8 @@ presence on the internet. They are fast, safe and easy to maintain. And with the
 modern features of HTML, CSS and the many options available of javascript libraries 
 and frameworks can be as rich of resources as the sites made using PHP, Rails, etc.
 
-In this tutorial you will learn how to create an static site in Daspanel using vue-cli.
+In this tutorial you will learn how to create an static site in Daspanel using 
+<b><a href="https://github.com/vuejs/vue-cli" target="_blank">vue-cli</a></b>.
 
 ## Quick Start
 
@@ -88,9 +89,30 @@ Now run this command on the console:
 npm install -g vue-cli
 ```
 
+!!! warning "NPM global install (-g)"
+    Because the nature of the Docker `npm` packages installed globally through 
+    the console does not persist after a Docker reboot. If you want to install 
+    `vue-cli` in the same directory where the site is so that it is permanently 
+    saved run the command like this:
+
+    ``` shell
+    npm install vue-cli
+    ```
+
+    However, in doing this the vue-cli command must be executed like this:
+
+    ``` shell
+    ./node_modules/.bin/vue init pwa .
+    ```
+
+    Because normally globally installed packages are usually just line command 
+    tools, there is no problem in reinstalling them every time that 
+    Docker is rebooted. Just do not globally install the packages that are used 
+    by your site. Click <b><a href="https://docs.npmjs.com/getting-started/installing-npm-packages-locally" target="_blank">here</a></b> to understand better.
+
 ### Create initial content using vue-cli
 
-After the `vue-cli` has been installed it is time to create the initial content 
+After the `vue-cli` package has been installed it is time to create the initial content 
 of the site using it.
 
 Run this command on the console:
@@ -104,6 +126,12 @@ vue init pwa .
     directory. If instead you use `myproject` instead of `.` the site will be created 
     in the `myproject` sub directory.
 
+install all dependencies using `npm`:
+
+``` shell
+npm install
+```
+
 ### Build static site
 
 Sites that are created using `vue-cli`, or similar tools, need to be build before 
@@ -112,6 +140,8 @@ they can be accessed. In the case of our example run the following command:
 ``` shell
 npm run build
 ```
+
+The static content of the site is generated and placed in the `dist` subdirectory.
 
 ### Set root dir of the site
 
@@ -144,6 +174,12 @@ On the next page you will see a list of all the existing versions for the site:
 
 1. Click the **Edit** button for the choosen site.
 
+[![Daspanel version](/img/site-version-edit-dir.png)](/img/site-version-edit-dir.png)
+
+1. Set the directory relative to the top level directory where the site version 
+exists. In this case it is `/dist`.
+2. Click **UPDATE VERSION** to save changes.
+
 ### View the new site
 
 Go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites module</a></b>. You will see a page like this:
@@ -153,9 +189,52 @@ Go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites m
 1. Click the **PREVIEW** button of the choosen site and a new window will open in your browser 
 displaying the contents of the active version of the site.
 
-[![Static content](static-content.png)](static-content.png)
+[![Vue content](/img/vuecli-content.png)](/img/vuecli-content.png)
 
 Now just customize the site for your needs.
+
+### Using npm server for development
+
+Instead of running the `npm run build` command every time some site file is 
+changed Daspanel allows the `npm` development server to be used.
+
+Go back to the site console and run the following command:
+
+``` shell
+npm run dev
+```
+In moments you will have a development HTTP server running and so to test any 
+changes made to the content will just make a reload of the page of the site:
+
+[![Daspanel version](/img/site-version-npmdev.png)](/img/site-version-npmdev.png)
+
+See which port the server is running on. In our case the port is 8080, as can 
+be seen in the screenshot above.
+
+Open a new blank tab in your browser and enter the preview address of the 
+development server. This address is formed by prefix `https://_ds.` + site URL + `:8080`. 
+To facilitate, just copy the address of the preview window that was opened 
+before in this howto. The URL would look something like:
+
+``` shell
+https://_ds.wonderful-bartik.sites.daspanel.site:8080
+```
+
+Now to view any changes made on the site just give a reload on the site page to 
+see the changes.
+
+When the site is ready for publishing, simply execute this command on its console:
+
+``` shell
+npm run build
+```
+
+And its static content will be generated in the `dist` directory.
+
+!!! warning "Ports that can be used"
+    The Daspanel load balancer only supports ports 8080 and 3000 for running 
+    `npm run dev`. If your site uses another you will have to make the necessary 
+    adjustments to it.
 
 ## Next Steps
 
