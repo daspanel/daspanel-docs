@@ -9,7 +9,7 @@ repo_name: 'GitHub'
 repo_url: 'https://github.com/daspanel/daspanel'
 
 # Copyright
-copyright: 'Copyright (c) 2016-2017 Abner G Jacobsen'
+copyright: 'Copyright (c) 2016-2018 Abner G Jacobsen'
 
 # Documentation and theme
 docs_dir: 'docs'
@@ -139,6 +139,9 @@ pages:
         - Database Manager: 'help/services/adminer.md'
         - S3 Storage: 'help/services/s3storage.md'
         - Mail Catcher: 'help/services/mailcatcher.md'
+    - System:
+        - Services Users: 'help/system/services_users.md'
+
 - How To:
     - Sites:
         - 'Wordpress': 'howto/wp/index.md'
