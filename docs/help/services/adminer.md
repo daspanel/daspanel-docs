@@ -38,11 +38,10 @@ for other servers that you want to use, just use the appropriate credentials.
 5. Click the login button.
 
 !!! tip "Admin password"
-    If you have not set the password manually in the `daspanel.env` file, 
-    visit the link below to see the notification email containing the password 
-    that was automatically generated for your installation.
+    You can easily obtain login credentials in the *** Database Management *** section of 
+    the Daspanel `System->Services Users` module using the link below:
     <p align="center">
-        <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
+        <b><a href="https://admin.daspanel.site/system/services/users" target="_blank">admin.daspanel.site/system/services/users</a></b><br>
     </p>
 
 ## Create database

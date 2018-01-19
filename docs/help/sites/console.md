@@ -31,9 +31,9 @@ your browser, a screen like this will appear to log in:
 
 !!! tip "Login credentials"
     You can easily obtain login credentials in the *** Console *** section of 
-    the Daspanel startup notification message using the link below:
+    the Daspanel `System->Services Users` module using the link below:
     <p align="center">
-        <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
+        <b><a href="https://admin.daspanel.site/system/services/users" target="_blank">admin.daspanel.site/system/services/users</a></b><br>
     </p>
 
 After your browser has an authentication token with console access 

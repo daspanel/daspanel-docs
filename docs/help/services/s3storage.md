@@ -34,10 +34,10 @@ A new window will open in your browser to enter the login data on the file manag
 3. Click the login button.
 
 !!! tip "Login credentials"
-    You can easily obtain login credentials in the *** S3 CONFIG *** section of 
-    the Daspanel startup notification message using the link below:
+    You can easily obtain login credentials in the *** S3 file manager *** section of 
+    the Daspanel `System->Services Users` module using the link below:
     <p align="center">
-        <b><a href="http://mail.svc.daspanel.site" target="_blank">mail.svc.daspanel.site</a></b><br>
+        <b><a href="https://admin.daspanel.site/system/services/users" target="_blank">admin.daspanel.site/system/services/users</a></b><br>
     </p>
 
 ## Where are the files of a website?
