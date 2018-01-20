@@ -148,6 +148,7 @@ pages:
         - 'Static HTML/JS': 'howto/htmljs/index.md'
         - 'Grav': 'howto/grav/index.md'
         - 'Static Using VUE-CLI': 'howto/htmljs/vue-cli.md'
+        - 'Deploy Static Site to Firebase': 'howto/htmljs/deploy2firebase.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'

@@ -1,4 +1,3 @@
-
 # Site using only static HTML/JS
 
 ## Overview
