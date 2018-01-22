@@ -212,6 +212,11 @@ Copy the authorization code, go back to the site console page and enter it there
 
 Press **ENTER** to finish the login setup.
 
+!!! warning "Persistence of the login setup"
+    Because the nature of the Docker the login setup of your account  does not 
+    persist after a Docker reboot. You will need to repeat this step every time 
+    you reboot your Docker environment.
+
 ### Initialize Firebase project for the site
 
 Run this command on the console:
@@ -275,20 +280,20 @@ When the console is updated:
 Copy the `Hosting URL`, Open a new browser window and access the site hosted 
 on Firebase.
 
-### Using npm server for development
+### Using firebase server for development
 
-Instead of running the `npm run build` command every time some site file is 
-changed Daspanel allows the `npm` development server to be used.
+Instead of running the `firebase deploy` command every time some site file is 
+changed Daspanel allows the `firebase` development server to be used.
 
 Go back to the site console and run the following command:
 
 ``` shell
-npm run dev
+firebase serve --port 8080
 ```
 In moments you will have a development HTTP server running and so to test any 
 changes made to the content will just make a reload of the page of the site:
 
-[![Daspanel version](/img/site-version-npmdev.png)](/img/site-version-npmdev.png)
+[![Daspanel firebase-server](/img/firebase-devserver.png)](/img/firebase-devserver.png)
 
 See which port the server is running on. In our case the port is 8080, as can 
 be seen in the screenshot above.
@@ -299,7 +304,7 @@ To facilitate, just copy the address of the preview window that was opened
 before in this howto. The URL would look something like:
 
 ``` shell
-https://_ds.wonderful-bartik.sites.daspanel.site:8080
+https://_ds.condescending-minsky.sites.daspanel.site:8080/
 ```
 
 Now to view any changes made on the site just give a reload on the site page to 
@@ -308,10 +313,8 @@ see the changes.
 When the site is ready for publishing, simply execute this command on its console:
 
 ``` shell
-npm run build
+firebase deploy
 ```
-
-And its static content will be generated in the `dist` directory.
 
 !!! warning "Ports that can be used"
     The Daspanel load balancer only supports ports 8080 and 3000 for running 
