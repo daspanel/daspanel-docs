@@ -87,15 +87,19 @@ permission, the web page of the console will be displayed:
 | | Cpanel account info |
 | :------- | :------
 | **FTP Server** | ftp.cpanelserver.com |
-| **Cpanel Account** | daspanel@mysite.com |
+| **Cpanel Account** | cpanelaccount |
 | **Cpanel Account Password** | mysupersecrectpassword |
 | **Site Directory** | public_html |
 
 Now run this command on the console:
 
 ``` shell
-lftp -u daspanel@mysite.com,mysupersecrectpassword -e 'mirror public_html .' ftp.cpanelserver.com
+lftp -u cpanelaccount,mysupersecrectpassword -e 'mirror -v --ignore-time --parallel=4 public_html public_html' ftp.cpanelserver.com
 ```
+
+When the command finish you see an screen like this:
+
+[![Daspanel console lftp finished](/img/lftp-finished.png)](/img/lftp-finished.png)
 
 ### View the new site
 
