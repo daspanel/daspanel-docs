@@ -94,30 +94,130 @@ permission, the web page of the console will be displayed:
 Now run this command on the console:
 
 ``` shell
-lftp -u cpanelaccount,mysupersecrectpassword -e 'mirror -v --ignore-time --parallel=4 public_html public_html' ftp.cpanelserver.com
+lftp -u cpanelaccount,mysupersecrectpassword -e 'mirror -v --ignore-time --parallel=4 public_html public_html; bye' ftp.cpanelserver.com
 ```
 
 When the command finish you see an screen like this:
 
 [![Daspanel console lftp finished](/img/lftp-finished.png)](/img/lftp-finished.png)
 
+### Set root dir of the site
+
+When the site was created its content is initially served from the directory of 
+its default version.
+
+That is, when you access, for example, `https://wonderful-bartik.sites.daspanel.site/`
+the content displayed is being fetched from a directory like this 
+`content/cjb71wzv1000365o420pyc5np/v/cjb71wzxb000465o4u7cquskg`.
+
+However, when importing the Cpanel site the content of it is in the sub directory 
+`content/cjb71wzv1000365o420pyc5np/v/cjb71wzxb000465o4u7cquskg/public_html`.
+
+Before viewing the site configure the root dir of it going to manage the available 
+versions of a site go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites module</a></b>
+
+[![Daspanel site versions](/img/site-versions.png)](/img/site-versions.png)
+
+1. Click the **third bullet** to display the version management area of the chosen site.
+
+The site card will be changed to the version management area:
+
+[![Daspanel site versions tab](/img/site-versions-area.png)](/img/site-versions-area.png)
+
+1. Click the **MANAGE** buttom to go the management page.
+
+On the next page you will see a list of all the existing versions for the site:
+
+[![Daspanel version](/img/site-version-edit.png)](/img/site-version-edit.png)
+
+1. Click the **Edit** button for the choosen site.
+
+[![Daspanel version](/img/site-version-edit-dir.png)](/img/site-version-edit-dir.png)
+
+1. Set the directory relative to the top level directory where the site version 
+exists. In this case it is `/public_html`.
+2. Click **UPDATE VERSION** to save changes.
+
+### Update Wordpress configuration
+
+Before proceeding, you need to make a small adjustment to the wp-config.php 
+file: change the MySql hostname.
+
+Access the [site file manager](/help/sites/filemanager/), enter into 
+the `public_html` dir, click on the `wp-config.php` file icon and you will see 
+its contents:
+
+[![wp-config.php content](/img/edit-wpconfig-1.png)](/img/edit-wpconfig-1.png)
+
+Almost always the value set for the `DB_HOST` variable will be equal to `localhost`. 
+In Daspanel the MySql server is in a separate container and so we need to change 
+the value to the correct hostname.
+
+1. Click the **Edit** button.
+
+Being in edit mode:
+
+[![wp-config.php content edit](/img/edit-wpconfig-2.png)](/img/edit-wpconfig-2.png)
+
+1. Change he `DB_HOST` variable to the value `daspanel-mysql`:
+2. Click the **Save file** button.
+
+Before proceeding take note of the database access information, they will be 
+needed in the next step:
+
+[![wp-config.php db info](/img/edit-wpconfig-3.png)](/img/edit-wpconfig-3.png)
+
+### Create Wordpress database in Daspanel
+
+Before import the Wordpress database you need a MySQL database in Daspanel. 
+Click the link below to find out how to use the Daspanel database 
+management service:
+
+[Database manager usage](/help/services/adminer.md)
+
+!!! warning ""
+    Remember to create your database and its user with the information that is in 
+    `wp-config.php` as in the previous section of this tutorial.
+
+### Import Wordpress database
+
+In Cpanel the tool that has to be used to export the database is phpmyadmin. It 
+is beyond the scope of this tutorial to explain how to use it, but on 
+wordpress.org <b><a href="https://codex.wordpress.org/Backing_Up_Your_Database#Using_phpMyAdmin" target="_blank">this page</a></b> 
+explains how to export the database of a wordpress website.
+
+After the exported database file is saved to your local computer, use the 
+Daspanel database management service to create an new local database and import 
+the Wordpress database exported from the Cpanel server.
+
+In the Daspanel database management page:
+
+[![adminer import wp database](/img/adminer-import-wp1.png)](/img/adminer-import-wp1.png)
+
+1. Make sure you have select the correct database.
+2. Click **Import** buttom.
+
+In the next page:
+
+[![adminer import wp database](/img/adminer-import-wp2.png)](/img/adminer-import-wp2.png)
+
+1. Select the database exported sql file.
+2. Click **Execute** to start the import.
+
+When the import finishes successfully a page similar to this will be displayed:
+
+[![adminer import wp database](/img/adminer-import-wp3.png)](/img/adminer-import-wp3.png)
+
 ### View the new site
 
-Once Wordpress is installed you will see a page like this:
+Go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites module</a></b>. You will see a page like this:
 
-[![Daspanel wordpress preview](sites-wp-preview.png)](sites-wp-preview.png)
+[![Daspanel wordpress preview](/img/site-control.png)](/img/site-control.png)
 
 1. Click the "PREVIEW" button and a new window will open in your browser 
 displaying the contents of the active version of the site.
 
 Now just complete the Wordpress setup in the new window that appears in your browser.
-
-### Create Wordpress database
-
-Before completing the Wordpress setup you need a MySQL database. Click the link 
-below to find out how to use the Daspanel database management service:
-
-[Database manager usage](/help/services/adminer.md)
 
 ### Finalize Wordpress setup
 
