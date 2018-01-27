@@ -149,8 +149,8 @@ pages:
         - 'Grav': 'howto/grav/index.md'
         - 'Static Using VUE-CLI': 'howto/htmljs/vue-cli.md'
         - 'Deploy Static Site to Firebase': 'howto/htmljs/deploy2firebase.md'
-    - Cpanel:
-        - 'Import Wordpress Site': 'howto/cpanel/import_wordpress.md'
+        - Import:
+            - 'Cpanel - Import Wordpress Site': 'howto/cpanel/import_wordpress.md'
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'

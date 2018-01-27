@@ -36,7 +36,7 @@ page with the options for the new site:
 3. **Engine**: And 'PHP 5.6' as Engine
 4. Click on the button 'CREATE SITE'
 
-!!! info "PHP version"
+!!! note "PHP version"
     The site that will be imported is hosted in a Cpanel account that uses 
     PHP 5.6. Thus, we chose the equivalent Daspanel PHP engine.
 
@@ -208,6 +208,56 @@ When the import finishes successfully a page similar to this will be displayed:
 
 [![adminer import wp database](/img/adminer-import-wp3.png)](/img/adminer-import-wp3.png)
 
+### Changing the site URL
+
+When you import a Wordpress site to be used with another domain name, it usually 
+stops working, it has problems with redirection, broken images, etc.
+
+This is because Wordpress saves its content information to the database with 
+the domain for which it was originally created.
+
+The internet is full of information about this and also with several ways to 
+solve the problem. In this tutorial we will adopt one suggested in 
+wordpress.org in the link below:
+
+<p align="center">
+    <b><a href="https://codex.wordpress.org/Changing_The_Site_URL#wp-cli" target="_blank">Changing_The_Site_URL</a></b><br>
+</p>
+
+Go back to the site console and run the following commands:
+
+``` shell
+cd public_html
+wp option get siteurl
+```
+The output of the `wp option get siteurl` is the current set value set for this 
+Wordpress option.
+
+!!! info "wp command"
+    Daspanel comes with **wp-cli** installed on the engines that support Wordpress. 
+    It can be executed by running the `wp` command. Learn more about **wp-cli** at 
+    this link:
+    <p align="center">
+        <b><a href="http://wp-cli.org/" target="_blank">wp-cli.org</a></b><br>
+    </p>
+
+Go to the [Sites module](http://admin.daspanel.site/sites/) and copy the URL of 
+the new wordpress site created in Daspanel:
+
+[![sites url info](/img/sites-url.png)](/img/sites-url.png)
+
+The URL will look something like `https://boring-pare.sites.daspanel.site`
+
+With the original `siteurl` value and the site URL in Daspanel in hand run the 
+following commands:
+
+``` shell
+wp option update siteurl 'https://boring-pare.sites.daspanel.site'
+wp option update home 'https://boring-pare.sites.daspanel.site'
+wp search-replace 'http://oldsiteurl.com' 'https://boring-pare.sites.daspanel.site' --skip-columns=guid --report-changed-only
+wp search-replace 'htts://oldsiteurl.com' 'https://boring-pare.sites.daspanel.site' --skip-columns=guid --report-changed-only
+```
+
 ### View the new site
 
 Go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites module</a></b>. You will see a page like this:
@@ -216,21 +266,6 @@ Go to the <b><a href="http://admin.daspanel.site/sites/" target="_blank">Sites m
 
 1. Click the "PREVIEW" button and a new window will open in your browser 
 displaying the contents of the active version of the site.
-
-Now just complete the Wordpress setup in the new window that appears in your browser.
-
-### Finalize Wordpress setup
-
-If you created a database called wordpress, with the user equal to **wpuser** and the 
-password as **SomeGoodPassword** setup your Wordpress site database settings like this:
-
-[![Daspanel wordpress dbsetup](sites-wp-dbsetup.png)](sites-wp-dbsetup.png)
-
-1. **Database Name**: The name of the database you created
-2. **Username**: The database user name you created
-3. **Password**: The password of the created database user
-4. **Database Host**: Always equal *daspanel-mysql* if you are usind Daspanel MySQL container server
-5. Click this button to continue Wordpress install
 
 ## Next Steps
 
