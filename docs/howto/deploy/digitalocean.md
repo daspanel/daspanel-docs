@@ -166,6 +166,23 @@ When all containers have the status equal to UP:
 
 Daspanel will be ready to be used on the remote server:
 
+### Access Daspanel in the remote server
+
+Open the remote Daspanel in your browser. The address will be 
+https://admin + the hostname you configured. In the case of this tutorial 
+would be: **https://admin.dastest.me**
+
+Log in with the same user and password used in your local installation, go to 
+the site area and click the site preview button:
+
+[![Digital Ocean oepn preview](/img/deploy/deploy-do-12.png)](/img/deploy/deploy-do-12.png)
+
+1. Click here to open preview of site using
+
+Check that the url of the site preview are correct and secure:
+
+[![Digital Ocean preview](/img/deploy/deploy-do-13.png)](/img/deploy/deploy-do-13.png)
+
 ## Next Steps
 
 * [Choose a friendly URL for the new site](/help/sites/edit.md)
