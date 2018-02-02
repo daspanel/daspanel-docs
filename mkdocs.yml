@@ -1,7 +1,7 @@
 # Project information
 site_name: 'Daspanel'
 site_description: 'Daspanel documentation.'
-site_author: 'Abner G Jacobsen'
+site_author: 'Daspanel'
 site_url: 'https://docs.daspanel.com'
 
 # Repository
@@ -9,7 +9,7 @@ repo_name: 'GitHub'
 repo_url: 'https://github.com/daspanel/daspanel'
 
 # Copyright
-copyright: 'Copyright (c) 2016-2018 Abner G Jacobsen'
+copyright: 'Copyright (c) 2016-2018 Daspanel'
 
 # Documentation and theme
 docs_dir: 'docs'
@@ -151,6 +151,10 @@ pages:
         - 'Deploy Static Site to Firebase': 'howto/htmljs/deploy2firebase.md'
         - Import:
             - 'Cpanel - Import Wordpress Site': 'howto/cpanel/import_wordpress.md'
+    - Deploy:
+        - Digital Ocean:
+            - Static and PHP sites: 'howto/deploy/digitalocean.md'
+
 #- User guide:
 #    - 'Usingh docker-compose': 'help/compose.md'
 #    - 'Advanced': 'help/advanced.md'
